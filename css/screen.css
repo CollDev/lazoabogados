@@ -66,21 +66,30 @@ div.blankSeparator2 {
 /****************************** HOME - Content Part - Logo&Menu ******************************/
 /* Header - Logo & Menu */
 #header {
-    background:#bfd6e4;
     margin-top:0px;
-    border-bottom:1px solid #6d8696;
+    /*border-bottom:1px solid #6d8696;*/
 }
 .logo {
-    float: left;
+    text-align: center;
+    padding-top: 60px;
     margin-right: 2px;
-    margin-top:15px;
-    margin-bottom:10px;
+    margin-bottom: 34px;
+}
+.head-background {
+    background: url("../images/layout/header.jpg") no-repeat center top;
+    height: 154px !important;
+}
+.nav-background {
+    background: url("../images/layout/navigation.jpg") repeat-x center top;
+    max-height: 86px !important;
 }
 .mainmenu {
-    float:right;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 9%;
 }
 ul.sf-menu {
-    margin-top:0px;
+    margin-top: 0px;
 }
 /*** ESSENTIAL STYLES ***/
 .sf-menu, .sf-menu * {
@@ -112,7 +121,7 @@ ul.sf-menu {
 }
 .sf-menu li:hover ul, .sf-menu li.sfHover ul {
     left:			0;
-    top:			2.5em; /* match top ul list item height */
+    top:			0px; /* match top ul list item height */
     z-index:		99;
 }
 ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul {
@@ -138,7 +147,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li {
     background:transparent;
-    border-top:2px solid transparent;
+    /*border-top:2px solid transparent;*/
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -147,16 +156,16 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li:hover { /* visited pseudo selector so IE6 applies text colour*/
     background: rgba(215, 234, 238, 0.3);
-    border-top:2px solid #fff;
+    /*border-top:2px solid #fff;*/
 }
 .sf-menu li a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    padding:45px 15px 45px 15px;
+    font-size: 18px;
+    padding: 37px 15px;
     text-decoration:none;
     text-transform:uppercase;
     font-weight:600;
-    color: #414558;
+    color: rgba(255, 255, 255, 0.3);
 }
 li a#visited {
     background: rgba(215, 234, 238, 0.3);
@@ -361,7 +370,24 @@ html[xmlns] .slides {
     background-position: 0 -26px;
     cursor: default;
 }
+.space {
+    height: 270px;
+}
+.highlighted {
+    background: url("../images/layout/content-1.png") no-repeat center top;
+    padding: 50px 0;
+}
+.highlighted .one_half {
+    margin-right: 2%;
+}
+.highlighted h2, .highlighted p {
+    padding: 20px 0 0 20px;
+}
 /****************************** HOME - Content Part - Box One ******************************/
+.info-backbround {
+    background: url("../images/layout/content-2.png") no-repeat center top;
+    padding: 50px 0;
+}
 .info a {
     color:#89a2b2;
     margin-left:0;
@@ -375,6 +401,12 @@ html[xmlns] .slides {
 .info a:hover {
     margin-left:4px;
     color:#738a99;
+}
+.info h2, .info p {
+    padding: 20px 0 0 20px;
+}
+.buttonhome {
+    float: right;
 }
 span.red {
     color:#c45d69;
@@ -394,8 +426,11 @@ span.green {
 .quote h4 {
     margin-bottom:-10px;
 }
+.clients {
+    background: url("../images/layout/content-3.png") no-repeat center top;
+}
 .clients img {
-    border-bottom:6px solid #efefef;
+    /*border-bottom:6px solid #efefef;*/
     opacity: 0.5;
     filter: alpha(opacity=50);
     -webkit-transition: opacity 0.5s linear;
@@ -404,6 +439,7 @@ span.green {
     -ms-transition: opacity 0.5s linear;
     transition: opacity 0.5s linear;
     cursor:pointer;
+    margin-top: 14px;
 }
 .clients img:hover {
     opacity: 1;
@@ -1220,7 +1256,7 @@ span.color {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     .sf-menu li a {
-        padding:45px 10px 45px 10px;
+        padding:37px 10px;
     }
     .flex-caption {
         display:none;
@@ -1312,6 +1348,7 @@ span.color {
 ================================================== */
 
 #mainmenu {
+    text-align: center;
     visibility: visible;
 }
 #responsive-menu {

@@ -54,6 +54,7 @@ table {
 /* #Basic Styles
 ================================================== */
 body {
+    background: url("../images/layout/back-desen-1.jpg") no-repeat center top;
     font: 12px Arial, Helvetica, sans-serif;
     line-height: 20px;
     color: white;
@@ -62,7 +63,7 @@ body {
     overflow-x: hidden;
 }
 html {
-    background: #f7f6f6;
+    background: #1f1f1f;
     /*overflow-x: hidden;*/
 }
 /* #Typography
