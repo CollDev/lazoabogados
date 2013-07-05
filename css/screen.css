@@ -500,9 +500,9 @@ a.simple {
 }
 /****************************** HOME - Content Part - Footer ******************************/
 #footer {
-    background:#626879;
+    background: url("../images/layout/footer.png") no-repeat center top;
     padding:20px 0px;
-    border-top:5px solid #bfd6e4;
+    /*border-top:5px solid #bfd6e4;*/
 }
 .footer p {
     color:white;
@@ -561,9 +561,7 @@ a.simple {
 }
 /****************************** HOME - Content Part - Copyright ******************************/
 #copyright {
-    background:#727888;
-    border-top:1px solid #414550;
-    border-bottom:5px solid #5c616f;
+
 }
 p.copyright {
     font-size:12px;
