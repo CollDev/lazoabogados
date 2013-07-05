@@ -82,12 +82,14 @@ h1 {
     margin-bottom: 10px;
 }
 h2 {
+    color: #f6a548;
     font-size: 16px;
     margin-bottom:10px;
     font-weight: 600;
     text-transform: uppercase;
 }
 h3 {
+    color: #f6a548;
     font-size: 14px;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -108,7 +110,7 @@ h6 {
     color: #414558;
 }
 p {
-    color: #5e637b;
+    color: #fff;
     line-height: 1.5em;
     font-size: 14px;
     margin: 0 0 15px 0;
@@ -364,4 +366,7 @@ select {
 }
 .right {
     float: right;
+}
+.lowercase {
+    text-transform: initial;
 }

@@ -380,11 +380,11 @@ html[xmlns] .slides {
 .highlighted .one_half {
     margin-right: 2%;
 }
-.highlighted h2, .highlighted p {
+.highlighted h2, .highlighted h3, .highlighted p {
     padding: 20px 0 0 20px;
 }
 /****************************** HOME - Content Part - Box One ******************************/
-.info-backbround {
+.info-background {
     background: url("../images/layout/content-2.png") no-repeat center top;
     padding: 50px 0;
 }
@@ -413,6 +413,12 @@ span.red {
 }
 span.green {
     color:#61bd68;
+}
+.libros {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    padding: 2px;
 }
 /****************************** HOME - Content Part - Box Two ******************************/
 .quote {
