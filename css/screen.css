@@ -415,11 +415,18 @@ html[xmlns] .slides {
 }
 .info .one_third {
     margin-right: 0;
-    padding: 80px 2% 14px;
+    padding: 80px 2% 22px;
     width: 29%;
 }
 .info .one_third h2 {
     font-size: 17px;
+}
+.clients .one_fourth {
+    margin-right: 2%;
+    width: 23%;
+}
+.clients .first-fourth {
+    padding-left: 1%;
 }
 .buttonhome {
     float: right;
