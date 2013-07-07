@@ -388,6 +388,9 @@ html[xmlns] .slides {
 .highlighted h3 {
     padding: 0 0 0 20px;
 }
+.highlighted p {
+    margin-bottom: 50px;
+}
 /****************************** HOME - Content Part - Box One ******************************/
 .info-background {
     background: url("../images/layout/content-2.png") no-repeat center top;
@@ -407,11 +410,16 @@ html[xmlns] .slides {
     margin-left:4px;
     color:#738a99;
 }
-.info h2, .info p {
-    padding: 20px 0 0 20px;
+.info p {
+    text-align: justify;
 }
 .info .one_third {
-    border: none;
+    margin-right: 0;
+    padding: 80px 2% 14px;
+    width: 29%;
+}
+.info .one_third h2 {
+    font-size: 17px;
 }
 .buttonhome {
     float: right;

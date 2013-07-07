@@ -83,7 +83,7 @@ h1 {
 }
 h2 {
     color: #f6a548;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom:10px;
     font-weight: 600;
     text-transform: uppercase;
@@ -112,9 +112,8 @@ h6 {
 p {
     color: #fff;
     line-height: 1.5em;
-    font-size: 14px;
+    font-size: 13px;
     margin: 0 0 15px 0;
-    font-family: 'PT Serif', serif;
 }
 p.last {
     margin-bottom: 0;
