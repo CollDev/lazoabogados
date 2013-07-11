@@ -370,8 +370,33 @@ html[xmlns] .slides {
     background-position: 0 -26px;
     cursor: default;
 }
-.space {
-    height: 270px;
+div.news div.one_half > img {
+    padding: 74px 0 79px 0;
+}
+div.news div.one_half div.news_title  {
+    font-size: 1.6em;
+    left: -23px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 146px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+div.news div.one_half div.news_detail {
+    font-size: 1.3em;
+    left: 85px;
+    position: absolute;
+    top: 137px;
+    width: 232px;
+}
+div.news div.one_half div.news_more {
+    bottom: 117px;
+    float: left;
+    left: 217px;
+    position: absolute;
 }
 .highlighted {
     background: url("../images/layout/content-1.png") no-repeat center top;
@@ -524,7 +549,6 @@ a.simple {
 /****************************** HOME - Content Part - Footer ******************************/
 #footer {
     background: url("../images/layout/footer.png") no-repeat center top;
-    padding:20px 0px;
     /*border-top:5px solid #bfd6e4;*/
 }
 .footer p {
