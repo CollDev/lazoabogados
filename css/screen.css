@@ -103,7 +103,7 @@ ul.sf-menu {
 .sf-menu ul {
     position:		absolute;
     top:			-999em;
-    width:			10em; /* left offset of submenus need to match (see below) */
+    width:			18em; /* left offset of submenus need to match (see below) */
 }
 .sf-menu ul li {
     width:			100%;
@@ -154,8 +154,10 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-.sf-menu li:hover { /* visited pseudo selector so IE6 applies text colour*/
-    background: rgba(215, 234, 238, 0.3);
+.sf-menu li.sfHover > a {
+    background: url("../images/layout/sfHover.png") no-repeat center bottom;
+}
+ li.sfHover li:hover { /* visited pseudo selector so IE6 applies text colour*/
     /*border-top:2px solid #fff;*/
 }
 .sf-menu li a {
@@ -168,12 +170,13 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
     color: rgba(255, 255, 255, 0.5);
 }
 li a#visited {
-    background: rgba(215, 234, 238, 0.3);
+    color: #F6A548;
 }
 /*** submenu ***/
 .sf-menu li ul {
-    border-bottom:5px solid #bfd6e4;
-    margin-top:75px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 85px;
+    padding: 8px;
 }
 .sf-menu ul li { /* visited pseudo selector so IE6 applies text colour*/
     border-top:none;
@@ -184,14 +187,13 @@ li a#visited {
 .sf-menu li ul li a {
     padding:15px 0 15px 0;
     text-decoration:none;
-    color:#fff;
-    background:#727888;
     color: #fff;
     border: 0;
-    padding:15px;
+    padding:5px;
     font-weight: normal;
-    font-size: 11px;
-    text-transform:lowercase;
+    font-size: 14px;
+    text-transform: none;
+    text-align: left;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -199,10 +201,10 @@ li a#visited {
     transition: all 0.3s ease-in-out;
 }
 .sf-menu li ul li a:hover {
-    padding-left: 18px;
+    color: #F6A548;
 }
 .sf-menu li li {
-    border-bottom:1px solid #606573;
+
 }
 /* apply hovers to modern browsers */
 a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-indicator, li:hover > a > .sf-sub-indicator, li.sfHover > a > .sf-sub-indicator {
@@ -446,6 +448,7 @@ div.news div.one_half div.news_more {
 .info .one_third h2 {
     font-size: 17px;
 }
+
 .clients .one_fourth {
     margin-right: 2%;
     width: 23%;
@@ -467,6 +470,17 @@ span.green {
     vertical-align: top;
     float: right;
     padding: 2px;
+}
+.footer .one_half {
+    vertical-align: bottom;
+}
+.links {
+    bottom: 0;
+    clear: both;
+    display: inline-block;
+    padding: 2px;
+    vertical-align: bottom;
+    width: 30%;
 }
 /****************************** HOME - Content Part - Box Two ******************************/
 .quote {
