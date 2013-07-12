@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/skeleton.css" />
         <link rel="stylesheet" href="css/screen.css" />
-        <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/prettyPhoto.css" />
+        <link rel="stylesheet" href="css/lightbox.css" />
         <link rel="shortcut icon" href="images/favicon.ico" />
         <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
@@ -110,10 +111,25 @@
             </div>
         </div>
         <div class="container clients">
-            <div class="one_fourth first-fourth"> <img src="images/layout/ambiente-1.jpg" alt=""/> </div>
-            <div class="one_fourth"> <img src="images/layout/ambiente-2.jpg" alt=""/> </div>
-            <div class="one_fourth"> <img src="images/layout/ambiente-3.jpg" alt=""/> </div>
-            <div class="one_fourth lastcolumn"> <img src="images/layout/ambiente-4.jpg" alt=""/> </div>
+            <div class="one_fourth first-fourth">
+                <a data-lightbox="ambientes" href="images/layout/ambiente-1-big.jpg">
+                    <img src="images/layout/ambiente-1.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="one_fourth">
+                <a data-lightbox="ambientes" href="images/layout/ambiente-2-big.jpg">
+                    <img src="images/layout/ambiente-2.jpg" alt=""/>
+                </a></div>
+            <div class="one_fourth">
+                <a data-lightbox="ambientes" href="images/layout/ambiente-3-big.jpg">
+                    <img src="images/layout/ambiente-3.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="one_fourth lastcolumn">
+                <a data-lightbox="ambientes" href="images/layout/ambiente-4-big.jpg">
+                    <img src="images/layout/ambiente-4.jpg" alt=""/>
+                </a>
+            </div>
         </div>
         <div class="blankSeparator1"></div>
         <div id="footer">
@@ -147,15 +163,16 @@
                 </div>
             </div>
         </div>
-        <script src="js/jquery-1.8.0.min.js" type="text/javascript"></script> 
-        <script src="js/screen.js" type="text/javascript"></script> 
-        <script src="js/poshytip-1.0/src/jquery.poshytip.min.js" type="text/javascript"></script> 
-        <script src="js/tabs.js" type="text/javascript"></script> 
-        <script src="js/jquery.tweetable.js" type="text/javascript"></script> 
-        <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script> 
-        <script src="js/superfish.js" type="text/javascript"></script> 
-        <script src="js/hoverIntent.js" type="text/javascript"></script> 
-        <script src="js/jquery.flexslider-min.js" type="text/javascript"></script> 
-        <script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+        <script src="js/jquery-1.8.0.min.js"></script>
+        <script src="js/screen.js"></script>
+        <script src="js/poshytip-1.0/src/jquery.poshytip.min.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/jquery.tweetable.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/superfish.js"></script>
+        <script src="js/hoverIntent.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/modernizr.custom.29473.js"></script>
+        <script src="js/lightbox-2.6.min.js"></script>
     </body>
 </html>
