@@ -1497,3 +1497,6 @@ span.color {
     font-size: 12px;
   }
 }
+div.lb-container img {
+    max-width: none;
+}
