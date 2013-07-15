@@ -424,7 +424,7 @@ div.news div.one_half div.news_more {
     border: 1px solid #656565;
     overflow: hidden;
     width: 960px;
-    height: 300px;
+    height: 312px;
     position: relative;
 }
 .info a {
@@ -446,8 +446,8 @@ div.news div.one_half div.news_more {
 }
 .info .one_third {
     margin-right: 0;
-    padding: 80px 2% 48px;
-    width: 7.5%;
+    padding: 80px 19px 48px;
+    width: 281px;
 }
 .info .one_third h2 {
     font-size: 17px;
