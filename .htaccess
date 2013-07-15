@@ -1,0 +1,9 @@
+# Activar RewriteEngine
+RewriteEngine on
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  /NOMBRE/
+#   Salida: index.php?id=NOMBRE
+#RewriteRule ^/(\w+)/?$ index.php?option=$1
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?option=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?option=$1

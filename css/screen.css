@@ -401,7 +401,7 @@ div.news div.one_half div.news_more {
     position: absolute;
 }
 .highlighted {
-    background: url("../images/layout/content-1.png") no-repeat center top;
+    background: rgba(0,0,0,0.6);
     padding: 63px 0 46px 0;
 }
 .highlighted .left-half{
@@ -420,8 +420,8 @@ div.news div.one_half div.news_more {
 }
 /****************************** HOME - Content Part - Box One ******************************/
 .info-background {
-    background: url("../images/layout/content-2.png") no-repeat center top;
-    padding: 50px 0 0 0s;
+    background: #282828;
+    border: 1px solid #656565;
 }
 .info a {
     color:#89a2b2;
@@ -442,19 +442,22 @@ div.news div.one_half div.news_more {
 }
 .info .one_third {
     margin-right: 0;
-    padding: 80px 2% 22px;
+    padding: 80px 2% 48px;
     width: 29%;
 }
 .info .one_third h2 {
     font-size: 17px;
 }
-
 .clients .one_fourth {
+    margin-bottom: 0;
     margin-right: 2%;
     width: 23%;
 }
 .clients .first-fourth {
     padding-left: 1%;
+}
+.clients .one_fourth img {
+    margin-top: 3%;
 }
 .buttonhome {
     float: right;
@@ -495,7 +498,7 @@ span.green {
     margin-bottom:-10px;
 }
 .clients {
-    background: url("../images/layout/content-3.png") no-repeat center top;
+    background: rgba(255,255,255,0.2);
 }
 .clients img {
     /*border-bottom:6px solid #efefef;*/
@@ -561,9 +564,8 @@ a.simple {
     font-size:11px;
 }
 /****************************** HOME - Content Part - Footer ******************************/
-#footer {
-    background: url("../images/layout/footer.png") no-repeat center top;
-    /*border-top:5px solid #bfd6e4;*/
+#footer .footer {
+    background: rgba(0,0,0,0.7);
 }
 .footer p {
     color:white;
@@ -1499,4 +1501,149 @@ span.color {
 }
 div.lb-container img {
     max-width: none;
+}
+.contact_form {
+    background: rgba(0,0,0,0.7);
+    padding: 127px 0 83px;
+}
+.contact_form p {
+    font-size: 16px;
+}
+.contact {
+    margin: 0 auto;
+    width: 70%;
+}
+.contact p {
+    color: #A2A1A1;
+    padding-top: 69px;
+}
+form#contact-form input, form#contact-form textarea {
+    background-color: #414141;
+    border-radius: 4px 4px 4px 4px;
+    border-style: none;
+    color: #fff;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 6px;
+    vertical-align: middle;
+    width: 262px;
+}
+.control-label {
+    color: #A2A1A1;
+    display: block;
+    float: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    text-align: right;
+}
+.control-group {
+    margin-bottom: 20px;
+}
+.controls {
+    margin-left: 100px;
+}
+.send-button {
+    background-color: #FAA732;
+    border-radius: 4px 4px 4px 4px;
+    /*background-image: linear-gradient(to bottom, #FBB450, #F89406);*/
+    /*background-repeat: repeat-x;*/
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    width: 89px;
+}
+#msg {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    background: url("http://images.glamourspa.pe/msg_arrow.gif") left center no-repeat;
+    padding-left: 7px
+}
+
+#msgcontent {
+    display: block;
+    color: #000;
+    background: #f3e6e6;
+    border: 2px solid #924949;
+    border-left: none;
+    padding: 5px;
+    min-width: 150px;
+    max-width: 250px
+}
+
+#fail{
+    border: 1px solid #8b0000;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") rgba(247, 0, 0, 1) repeat;
+}
+
+#success{
+    border: 1px solid #50c24e;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") rgba(143, 236, 143, 1) repeat;
+}
+
+#notice{
+    border: 1px solid #57b7e2;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") rgba(87, 182, 255, 1) repeat;
+}
+
+#warning{
+    border: 1px solid #ffc237;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") rgba(255, 234, 168, 1) repeat;
+}
+
+#fail div{
+    background: url("http://images.glamourspa.pe/error.png") no-repeat;
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+
+#success div{
+    background: url("http://images.glamourspa.pe/success.png") no-repeat;
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+
+#notice div{
+    background: url("http://images.glamourspa.pe/notice.png") no-repeat;
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+
+#warning div{
+    background: url("http://images.glamourspa.pe/warning.png") no-repeat;
+    height: 32px;
+    width: 32px;
+    float: left;
+}
+.modal-message {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 15px 15px 15px 15px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 18px;
+    left: 50%;
+    line-height: 30px;
+    margin: 0 auto 0 -200px;
+    min-height: 24px;
+    overflow: auto;
+    padding: 4px 10px 3px;
+    position: fixed;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000000;
+    top: 64px;
+    width: 400px;
+    z-index: 1002;
+}
+.orange {
+    color: #F6A548;
 }
