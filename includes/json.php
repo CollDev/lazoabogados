@@ -35,18 +35,17 @@ WHERE `id` = " . $_GET['product_id'] . ";";
         $comentario = $_POST['comentario'];
 
         if ($nombre != '' && $email != '' && $comentario != '') {
-            $nameRegex = '/^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$/';
-            $phoneRegex = '/[0-9-()+]{3,20}/';
+            $nameRegex = '/^[a-zA-Záéíóú]+$/';
             $emailRegex = '/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/';
             if (preg_match($nameRegex, $nombre) == 0)
                 $return = array('responseCode' => 400, 'response' => 'Ha ingresado un nombre no válido.');
             elseif (preg_match($emailRegex, $email) == 0)
                 $return = array('responseCode' => 400, 'response' => 'Ha ingresado un email no válido.');
-            elseif (isset($_POST['telefono']) && $_POST['telefono'] != '' && preg_match($phoneRegex, $_POST['telefono']) == 0)
+            elseif (isset($_POST['empresa']) && $_POST['empresa'] != '' && preg_match($phoneRegex, $_POST['empresa']) == 0)
                 $return = array('responseCode' => 400, 'response' => 'Ha ingresado un teléfono no válido.');
             else {
                 $apellidos = isset($_POST['apellidos']) ? "'" . $_POST['apellidos'] . "'" : NULL;
-                $telefono = isset($_POST['telefono']) ? "'" . $_POST['telefono'] . "'" : NULL;
+                $empresa = isset($_POST['empresa']) ? "'" . $_POST['empresa'] . "'" : NULL;
                 $direccion = isset($_POST['direccion']) ? "'" . $_POST['direccion'] . "'" : NULL;
                 //enviar el correo
                 require_once 'eml.php';
@@ -59,7 +58,7 @@ WHERE `id` = " . $_GET['product_id'] . ";";
 ' . '
 Nombre: ' . $nombre . '
 Apellidos: ' . $apellidos . '
-Telefono: ' . $telefono . '
+Telefono: ' . $empresa . '
 Dirección: ' . $direccion . '
 Email: ' . $email . '
 Escribió el siguiente comentario:' . '
@@ -74,7 +73,7 @@ Que tenga un buen dia.')
 //`id`,
 //`nombre`,
 //`apellidos`,
-//`telefono`,
+//`empresa`,
 //`direccion`,
 //`email`,
 //`comentario`,
@@ -84,7 +83,7 @@ Que tenga un buen dia.')
 //NULL,
 //'". $nombre . "',
 //" . $apellidos . ",
-//" . $telefono . ",
+//" . $empresa . ",
 //" . $direccion . ",
 //'". $email . "',
 //'". $comentario . "',
