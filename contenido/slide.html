@@ -1,0 +1,93 @@
+<!DOCUMENT html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Slider</title>
+        <style>
+            #slideContainer {
+	            width: 300px;
+	            height: 100px;
+	            overflow: hidden;
+	            border: 1px #000000 solid;
+	            margin: 20px auto;
+	            position: relative;
+            }
+             
+            #slideWrap {
+	            height: 100px;
+	            position: absolute;
+	            top: 0;
+	            left: 0;
+            }
+             
+            .slide {
+	            width: 100px;
+	            height: 100px;
+	            float: left;
+	            background: url("sprite.jpg") no-repeat 0 0;
+            }
+            .one { background: url("sprite.jpg") no-repeat 0 0; } 
+            .two { background: url("sprite.jpg") no-repeat -100px 0; }
+            .three { background: url("sprite.jpg") no-repeat -200px 0; }
+            .four { background: url("sprite.jpg") no-repeat -300px 0; }
+            .five { background: url("sprite.jpg") no-repeat -300px 0; }
+            .six { background: url("sprite.jpg") no-repeat -400px 0; }
+            .seven { background: url("sprite.jpg") no-repeat -500px 0; }
+            .eight { background: url("sprite.jpg") no-repeat -600px 0; }
+            .nine { background: url("sprite.jpg") no-repeat -700px 0; }
+            .ten { background: url("sprite.jpg") no-repeat -800px 0; }
+            .eleven { background: url("sprite.jpg") no-repeat -900px 0; }
+            .twelve { background: url("sprite.jpg") no-repeat -1000px 0; }
+        </style>
+    </head>
+
+    <body>
+        <div id="slideContainer">
+	        <div id="slideWrap">
+            	<div class="slide one"></div>
+                <div class="slide two"></div>
+                <div class="slide three"></div>
+                <div class="slide four"></div>
+                <div class="slide five"></div>
+                <div class="slide six"></div>
+                <div class="slide seven"></div>
+                <div class="slide eight"></div>
+                <div class="slide nine"></div>
+                <div class="slide ten"></div>
+                <div class="slide eleven"></div>
+                <div class="slide twelve"></div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var time = 3000;
+	            var slides = $('.slide');
+	            var numberSlides = slides.length;
+	            var slideWidth = $('.slide').width();
+	            var wrap = $('#slideWrap')
+             
+	            wrap.width(numberSlides * slideWidth);
+             
+	            function moveMent() {
+		            for(r=0; r<100; r++) {
+			            for(i=0; i < numberSlides - 1; i++) {
+				            wrap
+					            .delay(time)
+					            .animate({				 
+						            left : '-=' + slideWidth + 'px'
+					            })
+					            .fadeTo(500, 1)	
+			            }
+			            wrap.animate({
+			                left : '0'
+		                },0);
+		            }
+	            };
+             
+	            moveMent();	
+             
+            });
+        </script>
+    </body>
+</html>
