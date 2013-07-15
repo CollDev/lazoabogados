@@ -36,7 +36,7 @@ if (isset($_GET['option'])) {
     <body>
         <div id="header">
             <div class="container header head-background">
-                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+                <div class="logo"><a href="/"><img src="images/logo.png" alt="" /></a></div>
             </div>
             <div class="container header nav-background"> 
                 <div class="mainmenu">
