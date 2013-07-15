@@ -422,6 +422,10 @@ div.news div.one_half div.news_more {
 .info-background {
     background: #282828;
     border: 1px solid #656565;
+    overflow: hidden;
+    width: 960px;
+    height: 300px;
+    position: relative;
 }
 .info a {
     color:#89a2b2;
@@ -443,7 +447,7 @@ div.news div.one_half div.news_more {
 .info .one_third {
     margin-right: 0;
     padding: 80px 2% 48px;
-    width: 29%;
+    width: 7.5%;
 }
 .info .one_third h2 {
     font-size: 17px;
@@ -1646,4 +1650,10 @@ form#contact-form input, form#contact-form textarea {
 }
 .orange {
     color: #F6A548;
+}
+.info {
+    height: 173px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

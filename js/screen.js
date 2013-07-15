@@ -254,7 +254,35 @@
 
                             // preload the arrow //
                             if(document.images) {
-                              arrow = new Image(7,80);
-                              arrow.src = "../images/msg_arrow.gif";
+                                arrow = new Image(7,80);
+                                arrow.src = "../images/msg_arrow.gif";
                             }
+//                            console.log($('.container .info .one_third').height());
+//                            console.log($('.info-background').width());
+                            var time = 5000;
+                            var slides = $('.slide');
+                            var numberSlides = slides.length;
+                            console.log(numberSlides);
+                            var slideWidth = $('.slide').width();
+                            console.log(slideWidth);
+                            var wrap = $('.info');
+
+                            wrap.width(numberSlides * slideWidth);
+
+                            function moveMent() {
+                                for (r = 0; r < 100; r++) {
+                                    for (i = 0; i < numberSlides - 1; i++) {
+                                        wrap
+                                            .delay(time)
+                                            .animate({
+                                            left: '-=' + slideWidth + 'px'
+                                            })
+                                            .fadeTo(500, 1)
+                                    }
+                                    wrap.animate({
+                                        left: '0'
+                                    }, 0);
+                                }
+                            };
+                            moveMent();
                         });

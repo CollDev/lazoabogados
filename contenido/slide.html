@@ -5,26 +5,25 @@
         <title>Slider</title>
         <style>
             #slideContainer {
-	            width: 300px;
-	            height: 100px;
-	            overflow: hidden;
-	            border: 1px #000000 solid;
-	            margin: 20px auto;
-	            position: relative;
+                width: 300px;
+                height: 100px;
+                overflow: hidden;
+                border: 1px #000 solid;
+                margin: 20px auto;
+                position: relative;
             }
-             
+
             #slideWrap {
-	            height: 100px;
-	            position: absolute;
-	            top: 0;
-	            left: 0;
+                height: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
-             
+
             .slide {
-	            width: 100px;
-	            height: 100px;
-	            float: left;
-	            background: url("sprite.jpg") no-repeat 0 0;
+                width: 100px;
+                height: 100px;
+                float: left;
             }
             .one { background: url("sprite.jpg") no-repeat 0 0; } 
             .two { background: url("sprite.jpg") no-repeat -100px 0; }
@@ -43,8 +42,8 @@
 
     <body>
         <div id="slideContainer">
-	        <div id="slideWrap">
-            	<div class="slide one"></div>
+            <div id="slideWrap">
+                <div class="slide one"></div>
                 <div class="slide two"></div>
                 <div class="slide three"></div>
                 <div class="slide four"></div>
@@ -62,31 +61,29 @@
         <script>
             $(document).ready(function() {
                 var time = 3000;
-	            var slides = $('.slide');
-	            var numberSlides = slides.length;
-	            var slideWidth = $('.slide').width();
-	            var wrap = $('#slideWrap')
-             
-	            wrap.width(numberSlides * slideWidth);
-             
-	            function moveMent() {
-		            for(r=0; r<100; r++) {
-			            for(i=0; i < numberSlides - 1; i++) {
-				            wrap
-					            .delay(time)
-					            .animate({				 
-						            left : '-=' + slideWidth + 'px'
-					            })
-					            .fadeTo(500, 1)	
-			            }
-			            wrap.animate({
-			                left : '0'
-		                },0);
-		            }
-	            };
-             
-	            moveMent();	
-             
+                var slides = $('.slide');
+                var numberSlides = slides.length;
+                var slideWidth = $('.slide').width();
+                var wrap = $('#slideWrap');
+
+                wrap.width(numberSlides * slideWidth);
+
+                function moveMent() {
+                    for (r = 0; r < 100; r++) {
+                        for (i = 0; i < numberSlides - 1; i++) {
+                            wrap
+                                .delay(time)
+                                .animate({
+                                left: '-=' + slideWidth + 'px'
+                                })
+                                .fadeTo(500, 1)
+                        }
+                        wrap.animate({
+                            left: '0'
+                        }, 0);
+                    }
+                };
+                moveMent();
             });
         </script>
     </body>
