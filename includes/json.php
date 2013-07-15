@@ -41,7 +41,7 @@ WHERE `id` = " . $_GET['product_id'] . ";";
                 $return = array('responseCode' => 400, 'response' => 'Ha ingresado un nombre no válido.');
             elseif (preg_match($emailRegex, $email) == 0)
                 $return = array('responseCode' => 400, 'response' => 'Ha ingresado un email no válido.');
-            elseif (isset($_POST['empresa']) && $_POST['empresa'] != '' && preg_match($phoneRegex, $_POST['empresa']) == 0)
+            elseif (isset($_POST['empresa']) && $_POST['empresa'] != '' && preg_match($nameRegex, $_POST['empresa']) == 0)
                 $return = array('responseCode' => 400, 'response' => 'Ha ingresado un teléfono no válido.');
             else {
                 $apellidos = isset($_POST['apellidos']) ? "'" . $_POST['apellidos'] . "'" : NULL;
