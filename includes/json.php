@@ -46,7 +46,6 @@ WHERE `id` = " . $_GET['product_id'] . ";";
             else {
                 $apellidos = isset($_POST['apellidos']) ? "'" . $_POST['apellidos'] . "'" : NULL;
                 $empresa = isset($_POST['empresa']) ? "'" . $_POST['empresa'] . "'" : NULL;
-                $direccion = isset($_POST['direccion']) ? "'" . $_POST['direccion'] . "'" : NULL;
                 //enviar el correo
                 require_once 'eml.php';
                 $message = Swift_Message::newInstance()
@@ -58,8 +57,7 @@ WHERE `id` = " . $_GET['product_id'] . ";";
 ' . '
 Nombre: ' . $nombre . '
 Apellidos: ' . $apellidos . '
-Telefono: ' . $empresa . '
-Dirección: ' . $direccion . '
+Empresa: ' . $empresa . '
 Email: ' . $email . '
 Escribió el siguiente comentario:' . '
 ' . $comentario . '
@@ -74,7 +72,6 @@ Que tenga un buen dia.')
 //`nombre`,
 //`apellidos`,
 //`empresa`,
-//`direccion`,
 //`email`,
 //`comentario`,
 //`creado`,
@@ -84,7 +81,6 @@ Que tenga un buen dia.')
 //'". $nombre . "',
 //" . $apellidos . ",
 //" . $empresa . ",
-//" . $direccion . ",
 //'". $email . "',
 //'". $comentario . "',
 //NOW(),
