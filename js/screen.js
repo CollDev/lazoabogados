@@ -258,7 +258,7 @@
                                 arrow.src = "../images/msg_arrow.gif";
                             }
 
-                            var time = 1000;
+                            var time = 4000;
                             var slides = $('.slide');
                             var numberSlides = slides.length;
                             console.log(numberSlides);
