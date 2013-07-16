@@ -257,8 +257,7 @@
                                 arrow = new Image(7,80);
                                 arrow.src = "../images/msg_arrow.gif";
                             }
-//                            console.log($('.container .info .one_third').height());
-//                            console.log($('.info-background').width());
+
                             var time = 1000;
                             var slides = $('.slide');
                             var numberSlides = slides.length;
@@ -268,11 +267,11 @@
                             var wrap = $('.info');
                             var sum = parseInt(slideWidth) + parseInt(38);
 
-                            wrap.width(parseInt(numberSlides * slideWidth) + (38 * 12));
+                            wrap.width(parseInt(numberSlides * slideWidth) + (38 * numberSlides));
 
                             function moveMent() {
                                 for (r = 0; r < 100; r++) {
-                                    for (i = 0; i < numberSlides - 1; i++) {
+                                    for (i = 0; i < numberSlides - 3; i++) {
                                         wrap
                                             .delay(time)
                                             .animate({
