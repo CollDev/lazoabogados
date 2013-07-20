@@ -50,16 +50,16 @@ if (in_array($option, $header)) {
                             <li><a href="/"<?php if($option == '') { ?> id="visited"<?php } ?>>Estudio</a></li>
                             <li><a href="#"<?php if($option == 'areas') { ?> id="visited"<?php } ?>>Áreas</a>
                                 <ul>
-                                    <li><a href="/banca-y-finanzas">- Banca y finanzas y mercados de capitales</a></li>
+                                    <li><a href="/banca-y-finanzas">- Banca y finanzas</a></li>
                                     <li><a href="/civil-e-inmobiliaria">- Civil e inmobiliaria</a></li>
                                     <li><a href="/competencia">- Competencia</a></li>
-                                    <li><a href="/concursal-y-reestructuracion-patrimonial">- Concursal y reestructuracion patrimonial</a></li>
+                                    <li><a href="/concursal-y-reestructuracion-patrimonial">- Concursal y patrimonial</a></li>
                                     <li><a href="/corporativa">- Corporativa</a></li>
-                                    <li><a href="/derecho-administrativo-y-contratacion-publica">- Derecho administrativo y contratación pública</a></li>
+                                    <li><a href="/derecho-administrativo-y-contratacion-publica">- Administrativo</a></li>
                                     <li><a href="/laboral">- Laboral</a></li>
                                     <li><a href="/propiedad-intelectual">- Propiedad intelectual</a></li>
-                                    <li><a href="/proteccion-al-consumidor-y-publicidad-comercial">- Protección al consumidor y publicidad comercial</a></li>
-                                    <li><a href="/tributaria-y-planeamiento-tributario">- Tributaria y planeamiento tributario</a></li>
+                                    <li><a href="/proteccion-al-consumidor-y-publicidad-comercial">- Protección consumidor</a></li>
+                                    <li><a href="/tributaria-y-planeamiento-tributario">- Tributario</a></li>
                                 </ul>
                             </li>
                             <li><a href="/abogados"<?php if($option == 'abogados') { ?> id="visited"<?php } ?>>Abogados</a>
