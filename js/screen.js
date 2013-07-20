@@ -76,7 +76,7 @@
                             }).next().hide();
                             
                             $(function() {
-                                $(".send-button").live('click', function(e) {
+                                $("form .send-button").live('click', function(e) {
                                     e.preventDefault();
                                     var nombre = $("input#nombre"),
                                         apellidos = $("input#apellidos"),

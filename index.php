@@ -35,6 +35,10 @@ if (isset($_GET['option'])) {
     </head>
     
     <body>
+<?php
+$header = array('', 'abogados', 'contacto', 'trabaja-con-nosotros');
+if (in_array($option, $header)) {
+?>
         <div id="header">
             <div class="container header head-background">
                 <div class="logo"><a href="/"><img src="images/logo.png" alt="" /></a></div>
@@ -65,7 +69,6 @@ if (isset($_GET['option'])) {
                                     <li><a href="/abogados#tabs-1">- Socios</a></li>
                                     <li><a href="/abogados#tabs-2">- Asociados</a></li>
                                     <li><a href="/abogados#tabs-3">- Especialidades</a></li>
-                                    <li><a href="/abogados#tabs-4">- Buscador</a></li>
                                 </ul>
                             </li>
                             <li><a href="#"<?php if($option == 'reconocimientos') { ?> id="visited"<?php } ?>>Reconocimientos</a></li>
@@ -87,6 +90,7 @@ if (isset($_GET['option'])) {
             </div>
         </div>
 <?php
+}
 if ($option == '') {
     $require = 'inicio';
 } else {

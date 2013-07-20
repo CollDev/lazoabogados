@@ -175,7 +175,7 @@ li a#visited {
 }
 /*** submenu ***/
 .sf-menu li ul {
-    background: rgba(0, 0, 0, 0.3);
+    background: #3c3c3b;
     margin-top: 85px;
     padding: 8px;
 }
@@ -1722,10 +1722,10 @@ span.small {
     width: 87%;
 }
 #areas h2 {
-    font-size: 1.9em;
+    font-size: 1.5em;
     margin-bottom: 2em;
 }
-#areas p {
+#areas {
     font-size: 1.2em;
 }
 #areas .areas_left {
@@ -1737,6 +1737,13 @@ span.small {
 #areas .areas_right {
     display: inline-block;
     width: 30%;
+}
+#areas .areas_right hr {
+    background: #F6A548;
+    border: none;
+    border-radius: 2px;
+    height: 4px;
+    width: 70%;
 }
 #abogados .work {
     background: rgba(0, 0, 0, 0.45);
@@ -1766,13 +1773,18 @@ form#work-form .control-group {
 .work-input input {
     width: 100%;
 }
-form#work-form .send-button {
+#areas .send-button {
+    float: right;
+    right: 4em;
+    position: absolute;
+}
+form#work-form .send-button, #areas .send-button {
     background-color: #FAA732;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     color: #FFFFFF;
     font-size: 1.6em;
-    padding: 0.5em 1em;
+    padding: 0.5em 3em;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 form#work-form .work-label-mini {
