@@ -86,7 +86,6 @@ h2 {
     font-size: 20px;
     margin-bottom:10px;
     font-weight: 600;
-    text-transform: uppercase;
 }
 h3 {
     color: #f6a548;
@@ -122,8 +121,7 @@ p img {
     margin: 0;
 }
 ul li, ul li a {
-    font-family: 'PT Serif', serif;
-    font-size: 14px;
+
 }
 img.left {
     float: left;
@@ -300,11 +298,13 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     font: 12px Arial, Helvetica, sans-serif;
     color: #414558;
     margin: 0;
-    width: 198px;
     max-width: 100%;
     display: block;
     margin-bottom: 10px;
     background: #eee;
+}
+input[type="text"], input[type="password"], input[type="email"], select {
+    width: 198px;
 }
 select {
     padding: 0;
@@ -314,7 +314,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     color: #555;
 }
 textarea {
-    min-height: 100px;
+    min-height: 5em;
 }
 select {
     width: 220px;

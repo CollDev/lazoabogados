@@ -1,58 +1,58 @@
-<div class="container contact_form">
-    <div class="contact">
-        <div id="fail" class="modal-message" style="display: none;">
-            <div></div>
+        <div class="container contact_form">
+            <div class="contact">
+                <div id="fail" class="modal-message" style="display: none;">
+                    <div></div>
+                </div>
+                <div id="success" class="modal-message" style="display: none;">
+                    <div></div>
+                </div>
+                <div id="warning" class="modal-message" style="display: none;">
+                    <div></div>
+                </div>
+                <div id="notice" class="modal-message" style="display: none;">
+                    <div></div>
+                </div>
+                <h2>CONTACTO</h2>
+                <p>Para cualquier información que desee, por favor comuníquese con nosotros:</p>
+                <form action="/includes/json.php" method="post" id="contact-form">
+                    <div class="control-group">
+                        <label class="control-label" for="nombre">Nombres</label>
+                        <div class="controls">
+                            <input id="nombre" name="nombre" type="text" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="apellidos">Apellidos</label>
+                        <div class="controls">
+                            <input id="apellidos" name="apellidos" type="text" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="email">Correo</label>
+                        <div class="controls">
+                            <input id="email" name="email" type="email" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="empresa">Empresa</label>
+                        <div class="controls">
+                            <input id="empresa" name="empresa" type="text" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="comentario">Mensaje</label>
+                        <div class="controls">
+                            <textarea cols="36" id="comentario" name="comentario"></textarea>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label"></label>
+                        <div class="controls">
+                            <button class="send-button">ENVIAR</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="address">Dirección del estudio, Av. Pardo y Aliaga 699, Piso 7 en San Isidro. Lima - Perú<br>
+                    Teléfono: 511-6121700 Fax:511-6121701 Correo electrónico: <span><a class="orange" href="mailto:contacto@lazoabogados.com.pe">contacto@lazoabogados.com.pe</a></span></p>
+            </div>
         </div>
-        <div id="success" class="modal-message" style="display: none;">
-            <div></div>
-        </div>
-        <div id="warning" class="modal-message" style="display: none;">
-            <div></div>
-        </div>
-        <div id="notice" class="modal-message" style="display: none;">
-            <div></div>
-        </div>
-        <h2>CONTACTO</h2>
-        <p>Para cualquier información que desee, por favor comuníquese con nosotros:</p>
-        <form action="/includes/json.php" method="post" id="contact-form">
-            <div class="control-group">
-                <label class="control-label" for="nombre">Nombres</label>
-                <div class="controls">
-                    <input id="nombre" name="nombre" type="text" />
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label" for="apellidos">Apellidos</label>
-                <div class="controls">
-                    <input id="apellidos" name="apellidos" type="text" />
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label" for="email">Correo</label>
-                <div class="controls">
-                    <input id="email" name="email" type="email" />
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label" for="empresa">Empresa</label>
-                <div class="controls">
-                    <input id="empresa" name="empresa" type="text" />
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label" for="comentario">Mensaje</label>
-                <div class="controls">
-                    <textarea id="comentario" name="comentario"></textarea>
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label"></label>
-                <div class="controls">
-                    <button class="send-button">Enviar</button>
-                </div>
-            </div>
-        </form>
-        <p>Dirección del estudio, Av. Pardo y Aliaga 699, Piso 7 en San Isidro. Lima - Perú<br>
-            Teléfono: 511-6121700 Fax:511-6121701 Correo electrónico: <span><a class="orange" href="mailto:contacto@lazoabogados.com.pe">contacto@lazoabogados.com.pe</a></span></p>
-    </div>
-</div>

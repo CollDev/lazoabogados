@@ -1,0 +1,42 @@
+<div class="container lawyers">
+    <div id="abogados">
+        <ul>
+            <li><a href="#tabs-1">TRABAJA CON NOSOTROS</a></li>
+        </ul>
+        <div class="work" id="tabs-1">
+            <form action="/includes/json.php" method="post" id="work-form">
+                <div class="control-group">
+                    <label class="work-label" for="nombre">Nombre y apellidos</label>
+                    <div class="work-input">
+                        <input id="nombre" name="nombre" type="text" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="work-label" for="email">Email</label>
+                    <div class="work-input">
+                        <input id="email" name="email" type="email" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="work-label" for="telefono">Teléfono</label>
+                    <div class="work-input">
+                        <input id="telefono" name="telefono" type="text" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="work-label" for="dni">DNI</label>
+                    <div class="work-input">
+                        <input id="dni" name="dni" type="text" />
+                    </div>
+                </div>
+                <div class="control-group right">
+                    <label class="work-label-mini">Subir archivos en formato PDF</label>
+                    <div class="">
+                        <button class="send-button">ENVIAR CV</button>
+                    </div>
+                </div>
+                <input id="apellidos" name="apellidos" type="hidden" value="" />
+            </form>
+        </div>
+    </div>
+</div>

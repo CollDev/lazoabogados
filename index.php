@@ -18,16 +18,17 @@ if (isset($_GET['option'])) {
         <meta name="description" content="Place to put your description text" />
         <meta name="author" content="Joe Robles - joe.robles.pdj@gmail.com - CollDev" />
         <title>Lazo, De Roma&ntilde;a & Gagliuffi Abogados</title>
-        <link rel="stylesheet" href="css/base.css" />
-        <link rel="stylesheet" href="css/skeleton.css" />
-        <link rel="stylesheet" href="css/screen.css" />
-        <link rel="stylesheet" href="css/prettyPhoto.css" />
-        <link rel="stylesheet" href="css/lightbox.css" />
-        <link rel="shortcut icon" href="images/favicon.ico" />
-        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
-        <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="css/base.css" rel="stylesheet" />
+        <link href="css/skeleton.css" rel="stylesheet" />
+        <link href="css/screen.css" rel="stylesheet" />
+        <link href="css/prettyPhoto.css" rel="stylesheet" />
+        <link href="css/lightbox.css" rel="stylesheet" />
+        <link href="lib/jquery-ui/css/ui-darkness/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
+        <link href="images/favicon.ico" rel="shortcut icon" />
+        <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
+        <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+        <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+        <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -45,7 +46,7 @@ if (isset($_GET['option'])) {
                             <li><a href="/"<?php if($option == '') { ?> id="visited"<?php } ?>>Estudio</a></li>
                             <li><a href="#"<?php if($option == 'areas') { ?> id="visited"<?php } ?>>Áreas</a>
                                 <ul>
-                                    <li><a href="#">- Banca y finanzas</a></li>
+                                    <li><a href="/banca-y-finanzas">- Banca y finanzas</a></li>
                                     <li><a href="#">- Mercados de capitales</a></li>
                                     <li><a href="#">- Civil e inmobiliaria</a></li>
                                     <li><a href="#">- Competencia</a></li>
@@ -61,14 +62,14 @@ if (isset($_GET['option'])) {
                             </li>
                             <li><a href="#"<?php if($option == 'abogados') { ?> id="visited"<?php } ?>>Abogados</a>
                                 <ul>
-                                    <li><a href="#">- Socios</a></li>
-                                    <li><a href="#">- Asociados</a></li>
-                                    <li><a href="#">- Especialidades</a></li>
-                                    <li><a href="#">- Buscador</a></li>
+                                    <li><a href="/abogados#tabs-1">- Socios</a></li>
+                                    <li><a href="/abogados#tabs-2">- Asociados</a></li>
+                                    <li><a href="/abogados#tabs-3">- Especialidades</a></li>
+                                    <li><a href="/abogados#tabs-4">- Buscador</a></li>
                                 </ul>
                             </li>
                             <li><a href="#"<?php if($option == 'reconocimientos') { ?> id="visited"<?php } ?>>Reconocimientos</a></li>
-                            <li><a href="#"<?php if($option == 'probono') { ?> id="visited"<?php } ?>>Probono</a></li>
+                            <li><a href="/probono"<?php if($option == 'probono') { ?> id="visited"<?php } ?>>Probono</a></li>
                             <li><a href="/contacto"<?php if($option == 'contacto') { ?> id="visited"<?php } ?>>Contacto</a></li>
                         </ul>
                     </div>
@@ -122,5 +123,6 @@ require_once 'contenido/' . $require . '.html';
         <script src="js/jquery.flexslider-min.js"></script>
         <script src="js/modernizr.custom.29473.js"></script>
         <script src="js/lightbox-2.6.min.js"></script>
+        <script src="lib/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
     </body>
 </html>

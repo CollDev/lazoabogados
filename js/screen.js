@@ -82,8 +82,11 @@
                                         apellidos = $("input#apellidos"),
                                         email = $("input#email"),
                                         comentario = $("textarea#comentario"),
+                                        telefono     = $("input#telefono"),
+                                        dni = $("input#dni"),
                                         nameRegex = /^[a-zA-Záéíóú]+$/,
-                                        emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+                                        emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+                                        phoneRegex   = /[0-9-()+]{3,20}/;
 
                                     if (nombre.val() == "") {
                                         inlineMsg('nombre','Debe ingresar su nombre.',3);
@@ -105,13 +108,20 @@
                                         inlineMsg('email','Ha ingresado un correo no válido.',3);
                                         email.focus();
                                         return false;
+                                    } else if (telefono.val() != '' && !telefono.val().match(phoneRegex)) {
+                                        inlineMsg('telefono','Ha ingresado un teléfono no válido.',3);
+                                        telefono.focus();
+                                        return false;
+                                    } else if (dni.val() != '' && !dni.val().match(phoneRegex)) {
+                                        inlineMsg('dni','Ha ingresado un DNI no válido.',3);
+                                        dni.focus();
+                                        return false;
                                     } else if (comentario.val() == "") {
                                         inlineMsg('comentario','Debe ingresar un comentario.',3);
                                         comentario.focus();
                                         return false;
                                     }
                                     $form = $('form#contact-form');
-                                    console.log($form.serialize());
                                     $.ajax({
                                         type: "POST",
                                         url: $form.attr("action"),
@@ -216,8 +226,6 @@
                                 }
                             }
 
-                            
-
                             // calculate the position of the element in relation to the left of the browser //
                             function leftPosition(target) {
                                 var left = 0;
@@ -261,9 +269,7 @@
                             var time = 4000;
                             var slides = $('.slide');
                             var numberSlides = slides.length;
-                            console.log(numberSlides);
                             var slideWidth = $('.slide').width();
-                            console.log(slideWidth);
                             var wrap = $('.info');
                             var sum = parseInt(slideWidth) + parseInt(38);
 
@@ -285,4 +291,8 @@
                                 }
                             };
                             moveMent();
+                            
+                            $(function() {
+                                $( "#abogados" ).tabs();
+                            });
                         });

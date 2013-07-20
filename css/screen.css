@@ -154,8 +154,8 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-.sf-menu li.sfHover > a {
-    background: url("../images/layout/sfHover.png") no-repeat center bottom;
+.sf-menu li:hover > a {
+    color: #F6A548;
 }
  li.sfHover li:hover { /* visited pseudo selector so IE6 applies text colour*/
     /*border-top:2px solid #fff;*/
@@ -171,6 +171,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 li a#visited {
     color: #F6A548;
+    background: url("../images/layout/sfHover.png") no-repeat center bottom;
 }
 /*** submenu ***/
 .sf-menu li ul {
@@ -1508,30 +1509,35 @@ div.lb-container img {
 }
 .contact_form {
     background: rgba(0,0,0,0.7);
-    padding: 127px 0 83px;
+    padding: 10em 0 3em;
 }
 .contact_form p {
     font-size: 16px;
+}
+.contact_form p.address {
+    margin-top: 5em;
 }
 .contact {
     margin: 0 auto;
     width: 70%;
 }
 .contact p {
-    color: #A2A1A1;
-    padding-top: 69px;
+    color: #fff;
+    margin-bottom: 3em;
 }
 form#contact-form input, form#contact-form textarea {
     background-color: #414141;
-    border-radius: 4px 4px 4px 4px;
+    border-radius: 4px;
     border-style: none;
     color: #fff;
     font-size: 16px;
     height: 20px;
     line-height: 20px;
     margin-bottom: 0;
-    padding: 4px 6px;
+    padding: 6px 6px;
     vertical-align: middle;
+}
+form#contact-form input {
     width: 262px;
 }
 .control-label {
@@ -1544,24 +1550,22 @@ form#contact-form input, form#contact-form textarea {
     text-align: right;
 }
 .control-group {
-    margin-bottom: 20px;
+    margin-bottom: 2.8em;
 }
 .controls {
     margin-left: 100px;
 }
+form#contact-form .send-button {
+    font-weight: bold;
+    padding: 0.5em 1.6em;
+}
 .send-button {
     background-color: #FAA732;
     border-radius: 4px 4px 4px 4px;
-    /*background-image: linear-gradient(to bottom, #FBB450, #F89406);*/
-    /*background-repeat: repeat-x;*/
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    color: #FFFFFF;
+    color: #fff;
     font-size: 15px;
-    font-weight: bold;
-    height: 35px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    text-transform: uppercase;
-    width: 89px;
 }
 #msg {
     display: none;
@@ -1656,4 +1660,121 @@ form#contact-form input, form#contact-form textarea {
     position: absolute;
     top: 0;
     left: 0;
+}
+.lawyers {
+    background: rgba(0,0,0,0.7);
+    padding: 72px 0 83px;
+}
+.lawyers_detail {
+    border-radius: 6px;
+    clear: both;
+    display: block;
+    background: rgba(255, 255, 255, 0.14);
+    padding: 1.7em;
+}
+.lawyers_detail img {
+    border-radius: 5px;
+}
+.lawyers_details:first-child {
+    margin-right: 2%;
+}
+.lawyers_details {
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 1.2;
+    vertical-align: top;
+    width: 48%;
+}
+#abogados {
+    margin: 0 auto;
+    width: 68%;
+}
+#abogados hr {
+    background: #878787;
+    border: none;
+    border-radius: 3px;
+    height: 20px;
+}
+#abogados .ui-tabs-panel ul {
+    padding-left: 10px;
+}
+#abogados .ui-tabs-panel ul li:before{ content:"-"; position:relative; left:-5px;}
+#abogados .ui-tabs-panel ul li{ text-indent:-5px; }
+span.small {
+    display: block;
+    font-size: 0.7em;
+}
+.lawyers_link {
+    background: none repeat scroll 0 0 #676767;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 82px 1em 82px 0;
+    padding: 0.5em 1em;
+    vertical-align: top;
+}
+
+.lawyers_details span.title {
+    display: block;
+    margin-top: 1.5em;
+}
+#areas {
+    margin: 0 auto;
+    width: 87%;
+}
+#areas h2 {
+    font-size: 1.9em;
+    margin-bottom: 2em;
+}
+#areas p {
+    font-size: 1.2em;
+}
+#areas .areas_left {
+    display: inline-block;
+    text-align: justify;
+    margin-right: 5%;
+    width: 64%;
+}
+#areas .areas_right {
+    display: inline-block;
+    width: 30%;
+}
+#abogados .work {
+    background: rgba(0, 0, 0, 0.45);
+}
+form#work-form {
+    margin: 9em auto 0;
+    width: 78%;
+}
+form#work-form input {
+    background-color: #414141;
+    border-radius: 10px;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 2.5em;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 6px;
+    vertical-align: middle;
+}
+form#work-form label {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+form#work-form .control-group {
+    margin-bottom: 2em;
+}
+.work-input input {
+    width: 100%;
+}
+form#work-form .send-button {
+    background-color: #FAA732;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 1.6em;
+    padding: 0.5em 1em;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+form#work-form .work-label-mini {
+    font-size: 0.8em;
 }
