@@ -60,7 +60,7 @@ if (isset($_GET['option'])) {
                                     <li><a href="#">- Protección consumidor</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#"<?php if($option == 'abogados') { ?> id="visited"<?php } ?>>Abogados</a>
+                            <li><a href="/abogados"<?php if($option == 'abogados') { ?> id="visited"<?php } ?>>Abogados</a>
                                 <ul>
                                     <li><a href="/abogados#tabs-1">- Socios</a></li>
                                     <li><a href="/abogados#tabs-2">- Asociados</a></li>
