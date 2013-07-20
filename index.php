@@ -69,7 +69,7 @@ if (isset($_GET['option'])) {
                                 </ul>
                             </li>
                             <li><a href="#"<?php if($option == 'reconocimientos') { ?> id="visited"<?php } ?>>Reconocimientos</a></li>
-                            <li><a href="/probono"<?php if($option == 'probono') { ?> id="visited"<?php } ?>>Probono</a></li>
+                            <li><a href="#"<?php if($option == 'probono') { ?> id="visited"<?php } ?>>Probono</a></li>
                             <li><a href="/contacto"<?php if($option == 'contacto') { ?> id="visited"<?php } ?>>Contacto</a></li>
                         </ul>
                     </div>
