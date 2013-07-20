@@ -1669,15 +1669,15 @@ form#contact-form .send-button {
     background: rgba(0,0,0,0.7);
     padding: 72px 0 83px;
 }
+.lawyers img {
+    border-radius: 5px;
+}
 .lawyers_detail {
     border-radius: 6px;
     clear: both;
     display: block;
     background: rgba(255, 255, 255, 0.14);
     padding: 1.7em;
-}
-.lawyers_detail img {
-    border-radius: 5px;
 }
 .lawyers_details:first-child {
     margin-right: 2%;
