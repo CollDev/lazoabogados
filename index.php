@@ -95,6 +95,10 @@ if ($option == '') {
     $require = $option;
 }
 require_once 'contenido/' . $require . '.html';
+
+if (!in_array($option, $header)) {
+    require_once 'contenido/areas.html';
+}
 ?>
 
         <div id="copyright">
