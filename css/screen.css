@@ -158,8 +158,8 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
     color: #F6A548;
 }
 ul.sf-menu > li:hover {
-    transition: none;
-    background: url("../images/layout/sfHover.png") no-repeat center bottom;
+/*    transition: none;
+    background: url("../images/layout/sfHover.png") no-repeat center bottom;*/
 }
  li.sfHover li:hover { /* visited pseudo selector so IE6 applies text colour*/
     /*border-top:2px solid #fff;*/
