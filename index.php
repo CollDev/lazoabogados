@@ -36,7 +36,7 @@ if (isset($_GET['option'])) {
     
     <body>
 <?php
-$header = array('', 'abogados', 'contacto', 'trabaja-con-nosotros');
+$header = array('', 'abogados', 'reconocimientos', 'contacto', 'trabaja-con-nosotros');
 if (in_array($option, $header)) {
 ?>
         <div id="header">
@@ -69,17 +69,17 @@ if (in_array($option, $header)) {
                                     <li><a href="/abogados#tabs-3">- Especialidades</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#"<?php if($option == 'reconocimientos') { ?> id="visited"<?php } ?>>Reconocimientos</a></li>
+                            <li><a href="/reconocimientos"<?php if($option == 'reconocimientos') { ?> id="visited"<?php } ?>>Reconocimientos</a></li>
                             <li><a href="#"<?php if($option == 'probono') { ?> id="visited"<?php } ?>>Probono</a></li>
                             <li><a href="/contacto"<?php if($option == 'contacto') { ?> id="visited"<?php } ?>>Contacto</a></li>
                         </ul>
                     </div>
                     <form id="responsive-menu" action="#" method="post">
                         <select>
-                            <option value="#">Estudio</option>
+                            <option value="/">Estudio</option>
                             <option value="#">Áreas</option>
-                            <option value="#">Abogados</option>
-                            <option value="#">Reconocimientos</option>
+                            <option value="/abogados">Abogados</option>
+                            <option value="/reconocimientos">Reconocimientos</option>
                             <option value="#">Probono</option>
                             <option value="/contacto">Contacto</option>
                         </select>
@@ -89,12 +89,12 @@ if (in_array($option, $header)) {
         </div>
 <?php
 }
+
 if ($option == '') {
-    $require = 'inicio';
+    require_once 'contenido/inicio.php';
 } else {
-    $require = $option;
+    require_once 'contenido/' . $option . '.html';
 }
-require_once 'contenido/' . $require . '.html';
 
 if (!in_array($option, $header)) {
     require_once 'contenido/areas.html';
