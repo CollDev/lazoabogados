@@ -1,4 +1,4 @@
-<?php 
+<?php
 $toemail = 'test@youremail.com';
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -8,4 +8,3 @@ if(mail($toemail, 'Subject', $message, 'From: ' . $email)) {
 } else {
 	echo 'There was a problem sending your email.';
 }
-?>
