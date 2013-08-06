@@ -1,0 +1,26 @@
+estudio:
+    menu:
+        one: Studio
+        two: Areas
+            one: Bank and finance
+            two: Civil and mortage
+            three: ...
+        three: Attourneys
+            one: Partners
+            two:  Associates
+            three: Specialities
+        four: Prices
+        five: Probonus
+        six: Contact
+    content:
+        front:
+            title: RESULTADOS EFICIENTES Y EFICACES Somos un estudio con visión
+            content: Lazo, de Ronaña & Gagluffi Lazo, de Romaña & Gagluffi cierra operación con BBVA Lazo, de Romañan & Gagluffi Lazo, de Ronaña & Gagluffi Lazo, de Romaña & Gagluffi cierra operación con BBVA Lazo, de Romañan & Gagluffi 
+areas:
+abogados:
+reconocimientos:
+probono:
+contacto:
+trabaja_con_nosotros:
+noticias:
+boletin:
