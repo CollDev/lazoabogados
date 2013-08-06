@@ -378,7 +378,7 @@ html[xmlns] .slides {
     cursor: default;
 }
 div.news div.one_half > img {
-    padding: 74px 0 79px 0;
+    
 }
 div.news div.one_half div.news_title  {
     font-size: 1.6em;
@@ -391,13 +391,11 @@ div.news div.one_half div.news_title  {
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg);
+    z-index: 1;
 }
 div.news div.one_half div.news_detail {
     font-size: 1.3em;
-    left: 85px;
-    position: absolute;
-    top: 137px;
-    width: 232px;
+    top: 74px;
 }
 div.news div.one_half div.news_more {
     bottom: 117px;
@@ -1612,30 +1610,30 @@ form#contact-form .send-button {
 
 #fail div{
     background: url("http://images.glamourspa.pe/error.png") no-repeat;
+    float: left;
     height: 32px;
     width: 32px;
-    float: left;
 }
 
 #success div{
     background: url("http://images.glamourspa.pe/success.png") no-repeat;
+    float: left;
     height: 32px;
     width: 32px;
-    float: left;
 }
 
 #notice div{
     background: url("http://images.glamourspa.pe/notice.png") no-repeat;
+    float: left;
     height: 32px;
     width: 32px;
-    float: left;
 }
 
 #warning div{
     background: url("http://images.glamourspa.pe/warning.png") no-repeat;
+    float: left;
     height: 32px;
     width: 32px;
-    float: left;
 }
 .modal-message {
     background: none repeat scroll 0 0 #FFFFFF;
@@ -1661,9 +1659,9 @@ form#contact-form .send-button {
 }
 .info {
     height: 173px;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
 }
 .lawyers {
     background: rgba(0,0,0,0.7);
@@ -1673,10 +1671,10 @@ form#contact-form .send-button {
     border-radius: 5px;
 }
 .lawyers_detail {
+    background: rgba(255, 255, 255, 0.14);
     border-radius: 6px;
     clear: both;
     display: block;
-    background: rgba(255, 255, 255, 0.14);
     padding: 1.7em;
 }
 .lawyers_details:first-child {
@@ -1734,8 +1732,8 @@ span.small {
 }
 #areas .areas_left {
     display: inline-block;
-    text-align: justify;
     margin-right: 5%;
+    text-align: justify;
     width: 64%;
 }
 #areas .areas_right {
@@ -1779,8 +1777,8 @@ form#work-form .control-group {
 }
 #areas .send-button {
     float: right;
-    right: 4em;
     position: absolute;
+    right: 4em;
 }
 form#work-form .send-button, #areas .send-button {
     background-color: #FAA732;
@@ -1793,4 +1791,40 @@ form#work-form .send-button, #areas .send-button {
 }
 form#work-form .work-label-mini {
     font-size: 0.8em;
+}
+.nextPrevLink {
+    margin: 74px 0 79px;
+    width: 84px;
+}
+.nextPrevLink:hover .news_detail,.nextPrevLink.showFull .news_detail {
+    width: 430px
+}
+.nextPrevLink .news_detail {
+    -webkit-transition-property: all;
+    -ms-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.7s;
+    -ms-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-delay: 0.1s;
+    -ms-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    background: rgba(255,255,255,0.28);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.nextPrevLink .news_detail span {
+    display: block;
+    font-size: 12px;
+    height: 136px;
+    overflow: hidden;
+    padding: 10px 20px 20px 105px;
+    width: 310px;
+    z-index: 2;
+}
+.nextPrevLink img {
+    position: relative;
+    z-index: 1;
 }

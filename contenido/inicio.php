@@ -1,11 +1,16 @@
 
         <div class="container news">
-            <div class="one_half">
+            <div class="one_half nextPrevLink">
                 <img src="images/layout/news.png" />
                 <div class="news_title">Noticias</div>
-                <div class="news_detail">Lazo de Romaña & Gagluffi cierra operación con BBVA</div>
-                <div class="news_more">
-                    <a href="#" title="" class="buttonLink"><img src="images/layout/ver-mas.png" /></a>
+                <div class="news_detail">
+                    <span>
+                        + <a href="">Emisión de bonos de titulación de Odebrendt Inversiones Inmobiliarias S.A.C.</a><br>
+                        + <a href="">Venta del 100% de acciones de las principales empresas del Grupo Refasa - Carrión.</a><br>
+                        + <a href="">Emisión de bonos de titulación de Los Portales S.A.</a><br>
+                        <br>
+                        <a href="#" title="" class="buttonLink right"><img src="images/layout/ver-mas.png" /></a>
+                    </span>
                 </div>
             </div>
         </div>
