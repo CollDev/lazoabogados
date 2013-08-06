@@ -1816,6 +1816,7 @@ form#work-form .work-label-mini {
     width: 0;
 }
 .nextPrevLink .news_detail span {
+    color: #575756;
     display: block;
     font-size: 12px;
     height: 136px;
@@ -1823,6 +1824,9 @@ form#work-form .work-label-mini {
     padding: 10px 20px 20px 105px;
     width: 310px;
     z-index: 2;
+}
+.nextPrevLink .news_detail span a {
+    color: #f6f6f6;
 }
 .nextPrevLink img {
     position: relative;
