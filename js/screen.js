@@ -295,4 +295,8 @@
                             $(function() {
                                 $( "#abogados" ).tabs();
                             });
+                            $("#slideToggle").click(function () {
+                                $('.slideTogglebox').slideToggle(500);
+                                $("html, body").animate({ scrollTop: $(document).height() }, 500);
+                            });
                         });

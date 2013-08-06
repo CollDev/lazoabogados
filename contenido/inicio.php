@@ -51,11 +51,7 @@ require_once "areas.html";
         <div class="blankSeparator1"></div>
         <div id="footer">
             <div class="container footer">
-                <div class="one_half">
-                    <div class="links"><img src="images/layout/boletin.png" /></div>
-                    <div class="links"><img src="images/layout/mapa-de-sitio.png" /></div>
-                    <div class="links"><a href="/trabaja-con-nosotros"><img src="images/layout/trabaja-con-nosotros.png" /></a></div>
-                </div>
+                <div class="one_half"></div>
                 <div class="two_thirds">
                     <div class="libros"><a href="/reconocimientos"><img src="images/layout/libro-1.jpg" /></a></div>
                     <div class="libros"><a href="/reconocimientos"><img src="images/layout/libro-2.jpg" /></a></div>

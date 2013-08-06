@@ -572,7 +572,7 @@ a.simple {
 }
 /****************************** HOME - Content Part - Footer ******************************/
 #footer .footer {
-    background: rgba(0,0,0,0.7);
+
 }
 .footer p {
     color:white;
@@ -1831,4 +1831,65 @@ form#work-form .work-label-mini {
 .nextPrevLink img {
     position: relative;
     z-index: 1;
+}
+.footer-button {
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-block;
+    background: #3c3c3b;
+    border: 1px solid #e1e1e1;
+    padding: 5px;
+    text-align: center;
+    vertical-align: top;
+    width: 150px;
+}
+.omega .footer-button {
+    background: url("../images/layout/trabaja.jpg") 2px no-repeat #3c3c3b;
+}
+#copyright .container {
+    background: #575756;
+    padding: 10px;
+}
+#copyright .container .one_half {
+    margin-right: 2%;
+}
+.slideTogglebox {
+    background-color: #c6c6c6;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    display: none;
+    height: 160px;
+    padding: 0px;
+    width: 976px;
+}
+.slideTogglebox div {
+    height: 160px;
+    margin: 0;
+}
+.slideTogglebox div div {
+    border: 1px solid #3C3C3B;
+    border-left: none;
+    height: 160px;
+    margin: 0;
+    padding: 14px;
+}
+.slideTogglebox div p {
+    color: #3f3f3e;
+    margin-bottom: 0;
+    padding-left: 18px;
+}
+.slideTogglebox div ul li, .slideTogglebox div ul li a {
+    color: #878787;
+}
+.slideTogglebox div ul {
+    list-style-image: url("../images/layout/trabaja-li.jpg");
+    margin-left: 20px;
+}
+.slideTogglebox .one_sixth {
+    width: 17%;
+}
+.slideTogglebox .one_third {
+    width: 32%;
 }

@@ -24,6 +24,7 @@ if (isset($_GET['option'])) {
         <link href="css/prettyPhoto.css" rel="stylesheet" />
         <link href="css/lightbox.css" rel="stylesheet" />
         <link href="lib/jquery-ui/css/ui-darkness/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
+        <link href="css/jquery.jscrollpane.css" rel="stylesheet" />
         <link href="images/favicon.ico" rel="shortcut icon" />
         <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
         <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
@@ -100,26 +101,77 @@ if (!in_array($option, $header)) {
     require_once 'contenido/areas.html';
 }
 ?>
-
-        <div id="copyright">
-            <div class="container">
-                <div class="eleven columns alpha">
-                    <p class="copyright">Lazo, de Romaña & Gagluffi&copy;2013 Todos los derechos reservados. Creado por <a href="http://www.colldev.com/">CollDev</a>. Alojado en <a href="http://www.royalhoster.com">RoyalHoster</a></p>
+        <div class="container slideTogglebox">
+            <div class="one_sixth">
+                <p>ESTUDIO</p>
+                <div style="border-left: 1px solid #3C3C3B;">
+                    <ul>
+                        <li>Misión y Visión</li>
+                        <li><a href="/reconocimientos">Reconocimientos</a></li>
+                        <li>Noticias</li>
+                        <li>Boletín</li>
+                    </ul>
                 </div>
-                <div class="five columns omega">
-                    <section class="socials">
-                        <ul class="socials fr">
-                            <li><a href="#"><img src="images/socials/twitter.png" class="poshytip" title="Twitter"  alt="" /></a></li>
-                            <li><a href="#"><img src="images/socials/facebook.png" class="poshytip" title="Facebook" alt="" /></a></li>
-                            <li><a href="#"><img src="images/socials/google.png" class="poshytip" title="Google" alt="" /></a></li>
-                            <li><a href="#"><img src="images/socials/dribbble.png" class="poshytip" title="Dribbble" alt="" /></a></li>
-                        </ul>
-                    </section>
+            </div>
+            <div class="one_third">
+                <p>ÁREAS</p>
+                <div>
+                    <ul>
+                        <li><a href="/banca-y-finanzas">Banca y finanzas</a></li>
+                        <li><a href="/civil-e-inmobiliaria">Civil e inmobiliaria</a></li>
+                        <li><a href="/competencia">Competencia</a></li>
+                        <li><a href="/concursal-y-reestructuracion-patrimonial">Concursal y patrimonial</a></li>
+                        <li><a href="/corporativa">Corporativa</a></li>
+                        <li><a href="/derecho-administrativo-y-contratacion-publica">Administrativo</a></li>
+                        <li><a href="/laboral">Laboral</a></li>
+                        <li><a href="/propiedad-intelectual">Propiedad intelectual</a></li>
+                        <li><a href="/proteccion-al-consumidor-y-publicidad-comercial">Protección consumidor</a></li>
+                        <li><a href="/tributaria-y-planeamiento-tributario">Tributario</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="one_sixth">
+                <p>ABOGADOS</p>
+                <div>
+                    <ul>
+                        <li><a href="/abogados#tabs-1">Socios</a></li>
+                        <li><a href="/abogados#tabs-2">Asociados</a></li>
+                        <li><a href="/abogados#tabs-3">Especialidades</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="one_sixth">
+                <p>RSE</p>
+                <div>
+                    <ul>
+                        <li>Probono</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="one_sixth">
+                <p>HERRAMIENTAS</p>
+                <div>
+                    <ul>
+                        <li><a href="/trabaja-con-nosotros">Trabaja con nosotros</a></li>
+                        <li><a href="/contacto">Contacto</a></li>
+                        <li>English</li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <div id="copyright">
+            <div class="container">
+                <div class="one_half alpha">
+                    <div id="slideToggle" class="footer-button">Mapa de Sitio</div>
+                    <a href="/"><div class="footer-button">Boletín</div></a>
+                </div>
+                <div class="one_half omega">
+                    <a href="/trabaja-con-nosotros"><div class="footer-button right">&nbsp;&nbsp;&nbsp;&nbsp;Trabaja con nosotros</div></a>
+                </div>
+                <div>Todos los derechos reservados</div>
+            </div>
+        </div>
         <script src="js/jquery-1.8.0.min.js"></script>
-        <script src="js/screen.js"></script>
         <script src="js/poshytip-1.0/src/jquery.poshytip.min.js"></script>
         <script src="js/tabs.js"></script>
         <script src="js/jquery.tweetable.js"></script>
@@ -129,6 +181,9 @@ if (!in_array($option, $header)) {
         <script src="js/jquery.flexslider-min.js"></script>
         <script src="js/modernizr.custom.29473.js"></script>
         <script src="js/lightbox-2.6.min.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
         <script src="lib/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/screen.js"></script>
     </body>
 </html>
