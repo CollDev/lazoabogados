@@ -1,22 +1,65 @@
 estudio:
     menu:
-        one: Estudio
-        two: Áreas
+        one:
+            title: Studio
+        two:
+            title: Areas
             one: Banca y finanzas
             two: Civil e inmobiliaria
-            three: ...
-        three: Abogados
+            three: Competencia
+            four: Concursal y patrimonial
+            five: Corporativa
+            six: Administrativo
+            seven: Laboral
+            eight: Propiedad intelectual
+            nine: Protección consumidor
+            ten: Tributario
+        three:
+            title: Abogados
             one: Socios
-            two:  Asociados
+            two: Asociados
             three: Especialidades
-        four: Recomendaciones
-        five: Probono
-        six: Contacto
+        four:
+            title: Reconocimientos
+        five:
+            title: Probono
+        six:
+            title: Contacto
     content:
         front:
-            title: RESULTADOS EFICIENTES Y EFICACES Somos un estudio con visión
-            content: Lazo, de Ronaña & Gagluffi Lazo, de Romaña & Gagluffi cierra operación con BBVA Lazo, de Romañan & Gagluffi Lazo, de Ronaña & Gagluffi Lazo, de Romaña & Gagluffi cierra operación con BBVA Lazo, de Romañan & Gagluffi 
+            title: EFFICIENT AND EFFECTIVE RESULTS We are a group with a vision
+            content: Lazo, Ronaña & Gagluffi Lazo of Romagna & Gagluffi BBVA closed loop operation of Romañan & Gagluffi Lazo, Ronaña & Gagluffi Lazo of Romagna & Gagluffi BBVA closed loop operation of Romañan & Gagluffi.
 areas:
+    one:
+        title: ADMINISTRATIVE LAW AND PUBLIC CONTRACTING
+        content: Lazo, de Romaña & Galiuffi provides counsel to companies in procedures regarding the granting of authorizations, licenses and administrative permits. It is also dedicated to the defense of the interests of the companies in the development of sanctioning procedures follow in different public entities at any administrative instance. On the subject of Public Contracting, Lazo, de Romaña & Galiuffi offers counsel to companies participating in selection processes (tenders, bidding processes, adjudications, auctioning of public goods, etc), from the presentation of proposals to the subscription and execution of contracts.
+    two:
+        title: BANKING, FINANCE AND CAPITAL MARKETS
+        content: The area of Banking, Finance and Capital Markets provides counsel to companies in the different funding operations in the financial system and/or through capital markets. Thus our area is ready to provide counsel in direct financial matters, credits, unions, subordinate credits, financial derivatives, trusts,  issuances of shares, issuances of bonds of different natures according to the needs and characteristics of each client, title operations, financial operations of public and private projects, as well as stock market intermediation. Furthermore, Lazo, de Romaña & Galiuffi provides agents participating in banking, stock markets and capital markets with counsel in regulation processes and relationship to the control entities of the State so that such agents can meet legal local and international standards. We have cross-functional teams that provide counsel to the financial agents and those of capital markets in the creation of new products.
+    three:
+        title: BANKRUPTCY AND FINANCIAL RESTRUCTURING
+        content: We provide timely and effective advice to troubled over-leveraged enterprises. We approach our cases with analytical thinking to find innovative solutions and offer strategic counsel in their financial restructuring or bankruptcy proceeding. We have represented distressed companies and creditors (secured and unsecured) in various aspects of bankruptcy practice. Our experience comprehends, among others, legal risk-analysis, enforcement of creditors rights, asset sales, debtors governance structure during bankruptcy proceedings, the process of negotiating, voting and confirming a plan of reorganization and designing structures to mitigate the risk of bankruptcy. Our team is highly qualified for providing answers on legal issues connected to the Bankruptcy an Financial Restructuring practice such as Tax Law, Corporate Law, Labor Law, Mergers and Acquisitions, Finance and other connected areas.
+    four:
+        title: CIVIL & REAL ESTATE
+        content: We offer legal advice on all areas of then real estate industry, including sales and acquisitions (of developed and undeveloped real estate), leasing, creation of mortgages, real estate management, commercial and industrial leasing, among others. Our advice is not limited to the regulatory framework of this industry, but also to the business, per se, which facilitates the understanding of our clients needs and the sector problematic itself. We represent foreign and domestic companies, institutional investors, financial institutions, high-net worth individuals and private equity real estate funds. Our  expertise includes legal due diligence, compliance of environmental standards, water use rights, permits, licenses and declaration before the authorities of the corresponding sectors, drafting and negotiation of all necessary agreements. Our team is highly qualified for providing answers on legal issues connected to the real estate practice such as Financial Restructuring, Bankruptcy Law, Tax Law, Corporate Law, Securitization and other connected areas.
+    five:
+        title: COMPETITION LAW
+        content: The way competition between enterprises materializes constantly changes and new methods of competition arise every day. The exact meaning of competition related concepts may be vague or subject to dispute when competitors, seeking for their own success, promote different conducts and interpretations of Competition Law and regulations. In this scenario, we provide creative individually tailored counsel to our clients. At the preventive level we give in-house training to our clients staff on how to interpret our regulatory framework as well as how to apply compliance programs in the daily practice of their specific industry. Moreover, we analyze projects and business models to determine whether or not they might raise claims of anti-competitive behavior. At this level, our competition team is highly qualified to provide legal advice in order to minimize risk of potential concerns and accusations. We also have exceptional experience handling antitrust litigation. We have represented complainants and defendants in antitrust investigations and disputes before and against the Peruvian Competition Authority (INDECOPI). On both sides, we have handled claims alleging illegal antitrust conspiracies, concerted refusal to deal, predatory pricing, price discrimination, price-fixing, dumping, exclusive dealing, unfair advantages, among others related conducts. Our good record of success is based on our knowledge and skills on almost every aspect of a company business. Complementing our work, the international publication Chambers and Partners editions 2010 and 2011 ranked us as a leading firm in the Competition practice area.
+    six:
+        title: CONSUMER PROTECTION AND ADVERTISING
+        content: Public policies regarding Consumer Protection in Peru, have been improved in the last few years and consequently, several new rules and regulations have been approved. Therefore, consumers and suppliers are most conscious about the increasing possibilities of claims regarding consumer protection, hence asking for legal advice on a preventive level. Similarly, advertising rules and regulations have also improved to a level where we currently have a sophisticated legal framework that requires special knowledge and insights of the legal consequences of infringing advertising rules, bearing in mind the possible impact such infringement might have on competitors and, more importantly, on consumers. Our team is highly recognized in the Peruvian market as a successful group of counselors that constantly advises important companies on their relations with their consumers and competitors. At the preventive level we regularly provide legal advice on determining if their publicity campaigns are in accordance with the Peruvian legal framework, although, our day to day expertise is to handle litigation representing consumers and competitors before the Peruvian Competition Authority (INDECOPI).
+    seven:
+        title: CORPORATE LAW
+        content: Our Corporate group provides the entire range of the day to day legal services companies may need. We advise on matters regarding the incorporation of companies, preparation and review of by-laws, drafting and negotiating shareholders agreements, assessing disclosure control in order to comply with regulatory requirements and general corporate advisory, always guiding our clients through “best practices” standards in their specific industry. In addition, we counsel our clients focusing on matters that may arise in their businesses, addressing their needs during any process of decision-making, including legal advisory, due diligence processes, drafting and negotiation of contracts and other documents, deciding among financing choices, analyzing their alternatives of corporate reorganizations, mergers and acquisitions, asset sales, spin-offs, leasing transactions, and in general, we take care of every detail required by a particular transaction. Our team is highly qualified for providing answers on legal issues connected to the Corporate Law practice such as Tax Law, Labor Law, Capital Markets, Finance, Bankruptcy and Financial Restructuring, and other connected areas.
+    eight:
+        title: INTELLECTUAL PROPERTY
+        content: A company’s designations as well as its products are the most important assets and need to be protected against any third party. Lazo, de Romaña & Galiuffi understands this very well and thus, provides counsel in the correct and proper registration of a company’s designations (brands, claims, commercial names and others), the author’s rights and technological inventions, protecting their interest against a third party, especially in cases of opposition, brand cancellation and avoidance. The firm has built up an important expertise in the implementation of sophisticated legal strategies.
+    nine:
+        title: LABOR LAWN
+        content: Labor relationships inside a company are a key element in the harmonious development of the business activities. These relationships have an influence in the productivity and the performance of its employees. Thus, at Lazo, de Romaña & Galiuffi provides services in labor issues by formulating legal opinions in all kind of counsel, exercising the defense in administrative and judicial matters, as well as providing counsel in collective bargaining. In addition, we participate in the formulation on internal labor regulations, conduct labor auditing and due diligence processes, planning of human resources, preparation of labor contracts of all kind, including those of expats, as well as the development of the migration aspects of such type of contracts and the preparation of labor intermediation contracts and outsourcing.
+    ten:
+        title: TAX LAW AND TAX PLANNING
+        content: Services provided by the Tax Law and Tax Planning department are supported in the entire knowledge that its members aim to reach of the nature of businesses and of their necessities, interests and strengths. This particular view has allowed our team to reformulate the traditional concept of tax advisory within Law Firms, turning it into a complete service that allows not only the solution of problems when those appear, but setting guidelines and collaborating with our clients in order to avoid contingences and to optimize taxation in their businesses. Thus, our Tax Law and Tax Planning department provides business tax advisory and consulting services, customs law advisory, sponsorship in tax disputes and other tax procedures, identification and calculation of sel assessments, identification of tax risks, review of Tax Returns, due diligences, tax planning services in ongoing concerns and in new businesses operations, among others.
 abogados:
 reconocimientos:
 probono:
