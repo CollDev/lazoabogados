@@ -43,7 +43,7 @@ require_once "areas.html";
                     <img src="images/layout/ambiente-3.jpg" alt="" />
                 </a>
             </div>
-            <div class="one_fourth">
+            <!--<div class="one_fourth">
                 <a data-lightbox="ambientes" href="images/layout/ambiente-4-big.jpg">
                     <img src="images/layout/ambiente-4.jpg" alt="" />
                 </a>
@@ -62,7 +62,7 @@ require_once "areas.html";
                 <a data-lightbox="ambientes" href="images/layout/ambiente-7-big.jpg">
                     <img src="images/layout/ambiente-7.jpg" alt="" />
                 </a>
-            </div>
+            </div>-->
             <div class="one_fourth lastcolumn">
                 <a data-lightbox="ambientes" href="images/layout/ambiente-8-big.jpg">
                     <img src="images/layout/ambiente-8.jpg" alt="" />
