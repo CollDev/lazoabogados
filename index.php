@@ -163,7 +163,7 @@ if (!in_array($option, $header)) {
             <div class="container">
                 <div class="one_half alpha">
                     <div id="slideToggle" class="footer-button">Mapa de Sitio</div>
-                    <a href="/"><div class="footer-button">Boletín</div></a>
+                    <a href="/boletin"><div class="footer-button">Boletín</div></a>
                 </div>
                 <div class="one_half omega">
                     <a href="/trabaja-con-nosotros"><div class="footer-button right">&nbsp;&nbsp;&nbsp;&nbsp;Trabaja con nosotros</div></a>

@@ -1664,7 +1664,7 @@ form#contact-form .send-button {
     top: 0;
 }
 .lawyers {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.6);
     padding: 72px 0 83px;
 }
 .lawyers img {
@@ -1734,11 +1734,11 @@ span.small {
     display: inline-block;
     margin-right: 5%;
     text-align: justify;
-    width: 64%;
+    width: 66%;
 }
 #areas .areas_right {
     display: inline-block;
-    width: 30%;
+    width: 22%;
 }
 #areas .areas_right hr {
     background: #F6A548;
@@ -1778,7 +1778,7 @@ form#work-form .control-group {
 #areas .send-button {
     float: right;
     position: absolute;
-    right: 4em;
+    right: 92px;
 }
 form#work-form .send-button, #areas .send-button {
     background-color: #FAA732;
@@ -1892,4 +1892,30 @@ form#work-form .work-label-mini {
 }
 .slideTogglebox .one_third {
     width: 32%;
+}
+#areas .top {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    margin-top: 64px;
+    padding: 0 22px;
+    font-style: italic;
+    vertical-align: top;
+}
+#areas .areas_right ul {
+    list-style-image: url("../images/layout/trabaja-li.png");
+    margin-left: 20px;
+}
+#areas .areas_right ul li {
+    padding: 6px;
+}
+#areas h2 {
+    margin: 1em 0em;
+    text-align: left;
+}
+span.white {
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
 }
