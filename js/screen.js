@@ -265,16 +265,12 @@
                                 arrow = new Image(7,80);
                                 arrow.src = "../images/msg_arrow.gif";
                             }
-console.log('areas');
                             var time = 4000;
                             var slides = $('.slide');
                             var numberSlides = slides.length;
-console.log('numberSlides: ' + numberSlides);
                             var slideWidth = $('.slide').width();
-console.log('slideWidth: ' + slideWidth);
                             var wrap = $('.info');
                             var sum = parseInt(slideWidth) + parseInt(38);
-console.log('sum: ' + sum);
 
                             wrap.width(parseInt(numberSlides * slideWidth) + (38 * numberSlides));
 
@@ -294,17 +290,13 @@ console.log('sum: ' + sum);
                                 }
                             };
                             moveMent();
-console.log('ambientes');
                             
                             var timea = 2000;
                             var slidesa = $('.slidea');
                             var numberSlidesa = slidesa.length;
-console.log('numberSlidesa: ' + numberSlidesa);
                             var slideWidtha = $('.slidea').width();
-console.log('slideWidtha: ' + slideWidtha);
                             var wrapa = $('.clients');
                             var suma = parseInt(slideWidtha) + parseInt(34);
-console.log('suma: ' + suma);
 
                             wrapa.width(parseInt(numberSlidesa * slideWidtha) + (34 * numberSlidesa));
 
