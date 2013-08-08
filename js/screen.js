@@ -270,13 +270,15 @@
                             var numberSlides = slides.length;
                             var slideWidth = $('.slide').width();
                             var wrap = $('.info');
-                            var sum = parseInt(slideWidth) + parseInt(38);
+                            var padding = 19;
+                            var visibleSlides = 3;
+                            var sum = parseInt(slideWidth) + parseInt(padding * 2);
 
-                            wrap.width(parseInt(numberSlides * slideWidth) + (38 * numberSlides));
+                            wrap.width(parseInt(numberSlides * slideWidth) + (padding * 2 * numberSlides));
 
                             function moveMent() {
                                 for (var r = 0; r < 100; r++) {
-                                    for (var i = 0; i < numberSlides - 3; i++) {
+                                    for (var i = 0; i < numberSlides - visibleSlides; i++) {
                                         wrap
                                             .delay(time)
                                             .animate({
@@ -296,13 +298,15 @@
                             var numberSlidesa = slidesa.length;
                             var slideWidtha = $('.slidea').width();
                             var wrapa = $('.clients');
-                            var suma = parseInt(slideWidtha) + parseInt(34);
+                            var padding = 17;
+                            var visibleSlides = 4;
+                            var suma = parseInt(slideWidtha) + parseInt(padding * 2);
 
-                            wrapa.width(parseInt(numberSlidesa * slideWidtha) + (34 * numberSlidesa));
+                            wrapa.width(parseInt(numberSlidesa * slideWidtha) + (padding * 2 * numberSlidesa));
 
                             function moveMentAreas() {
                                 for (var r = 0; r < 100; r++) {
-                                    for (var i = 0; i < numberSlidesa - 4; i++) {
+                                    for (var i = 0; i < numberSlidesa - visibleSlides; i++) {
                                         wrapa
                                             .delay(timea)
                                             .animate({
