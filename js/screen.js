@@ -296,7 +296,7 @@ console.log('sum: ' + sum);
                             moveMent();
 console.log('ambientes');
                             
-                            var timea = 1000;
+                            var timea = 2000;
                             var slidesa = $('.slidea');
                             var numberSlidesa = slidesa.length;
 console.log('numberSlidesa: ' + numberSlidesa);
