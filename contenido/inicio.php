@@ -46,6 +46,22 @@ require_once "areas.html";
                 <a data-lightbox="ambientes" href="images/layout/ambiente-4-big.jpg">
                     <img src="images/layout/ambiente-4.jpg" alt="" />
                 </a>
+            <div class="one_fourth lastcolumn">
+                <a data-lightbox="ambientes" href="images/layout/ambiente-5-big.jpg">
+                    <img src="images/layout/ambiente-5.jpg" alt="" />
+                </a>
+            <div class="one_fourth lastcolumn">
+                <a data-lightbox="ambientes" href="images/layout/ambiente-6-big.jpg">
+                    <img src="images/layout/ambiente-6.jpg" alt="" />
+                </a>
+            <div class="one_fourth lastcolumn">
+                <a data-lightbox="ambientes" href="images/layout/ambiente-7-big.jpg">
+                    <img src="images/layout/ambiente-7.jpg" alt="" />
+                </a>
+            <div class="one_fourth lastcolumn">
+                <a data-lightbox="ambientes" href="images/layout/ambiente-8-big.jpg">
+                    <img src="images/layout/ambiente-8.jpg" alt="" />
+                </a>                
             </div>
         </div>
         <div class="blankSeparator1"></div>
