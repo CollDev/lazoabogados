@@ -27,46 +27,68 @@
 <?php
 require_once "areas.html";
 ?>
-        <div class="container clients">
-            <div class="one_fourth first-fourth">
-                <a data-lightbox="ambientes" href="images/layout/ambiente-1-big.jpg">
-                    <img src="images/layout/ambiente-1.jpg" alt="" />
-                </a>
-            </div>
-            <div class="one_fourth">
-                <a data-lightbox="ambientes" href="images/layout/ambiente-2-big.jpg">
-                    <img src="images/layout/ambiente-2.jpg" alt="" />
-                </a>
-            </div>
-            <div class="one_fourth">
-                <a data-lightbox="ambientes" href="images/layout/ambiente-3-big.jpg">
-                    <img src="images/layout/ambiente-3.jpg" alt="" />
-                </a>
-            </div>
-            <!--<div class="one_fourth">
-                <a data-lightbox="ambientes" href="images/layout/ambiente-4-big.jpg">
-                    <img src="images/layout/ambiente-4.jpg" alt="" />
-                </a>
-            </div>
-            <div class="one_fourth">
-                <a data-lightbox="ambientes" href="images/layout/ambiente-5-big.jpg">
-                    <img src="images/layout/ambiente-5.jpg" alt="" />
-                </a>
-            </div>
-            <div class="one_fourth">
-                <a data-lightbox="ambientes" href="images/layout/ambiente-6-big.jpg">
-                    <img src="images/layout/ambiente-6.jpg" alt="" />
-                </a>
-            </div>
-            <div class="one_fourth">
-                <a data-lightbox="ambientes" href="images/layout/ambiente-7-big.jpg">
-                    <img src="images/layout/ambiente-7.jpg" alt="" />
-                </a>
-            </div>-->
-            <div class="one_fourth lastcolumn">
-                <a data-lightbox="ambientes" href="images/layout/ambiente-8-big.jpg">
-                    <img src="images/layout/ambiente-8.jpg" alt="" />
-                </a>                
+        <div class="container areas">
+            <div class="container clients">
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-1-big.jpg">
+                        <img src="images/layout/ambiente-1.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-2-big.jpg">
+                        <img src="images/layout/ambiente-2.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-3-big.jpg">
+                        <img src="images/layout/ambiente-3.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-4-big.jpg">
+                        <img src="images/layout/ambiente-4.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-5-big.jpg">
+                        <img src="images/layout/ambiente-5.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-6-big.jpg">
+                        <img src="images/layout/ambiente-6.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-7-big.jpg">
+                        <img src="images/layout/ambiente-7.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-8-big.jpg">
+                        <img src="images/layout/ambiente-8.jpg" alt="" />
+                    </a>                
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-1-big.jpg">
+                        <img src="images/layout/ambiente-1.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-2-big.jpg">
+                        <img src="images/layout/ambiente-2.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-3-big.jpg">
+                        <img src="images/layout/ambiente-3.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="one_fourth slidea">
+                    <a data-lightbox="ambientes" href="images/layout/ambiente-4-big.jpg">
+                        <img src="images/layout/ambiente-4.jpg" alt="" />
+                    </a>
+                </div>
             </div>
         </div>
         <div class="blankSeparator1"></div>

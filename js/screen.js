@@ -265,19 +265,22 @@
                                 arrow = new Image(7,80);
                                 arrow.src = "../images/msg_arrow.gif";
                             }
-
+console.log('areas');
                             var time = 4000;
                             var slides = $('.slide');
                             var numberSlides = slides.length;
+console.log('numberSlides: ' + numberSlides);
                             var slideWidth = $('.slide').width();
+console.log('slideWidth: ' + slideWidth);
                             var wrap = $('.info');
                             var sum = parseInt(slideWidth) + parseInt(38);
+console.log('sum: ' + sum);
 
                             wrap.width(parseInt(numberSlides * slideWidth) + (38 * numberSlides));
 
                             function moveMent() {
-                                for (r = 0; r < 100; r++) {
-                                    for (i = 0; i < numberSlides - 3; i++) {
+                                for (var r = 0; r < 100; r++) {
+                                    for (var i = 0; i < numberSlides - 3; i++) {
                                         wrap
                                             .delay(time)
                                             .animate({
@@ -291,6 +294,36 @@
                                 }
                             };
                             moveMent();
+console.log('ambientes');
+                            
+                            var timea = 1000;
+                            var slidesa = $('.slidea');
+                            var numberSlidesa = slidesa.length;
+console.log('numberSlidesa: ' + numberSlidesa);
+                            var slideWidtha = $('.slidea').width();
+console.log('slideWidtha: ' + slideWidtha);
+                            var wrapa = $('.clients');
+                            var suma = parseInt(slideWidtha) + parseInt(34);
+console.log('suma: ' + suma);
+
+                            wrapa.width(parseInt(numberSlidesa * slideWidtha) + (34 * numberSlidesa));
+
+                            function moveMentAreas() {
+                                for (var r = 0; r < 100; r++) {
+                                    for (var i = 0; i < numberSlidesa - 4; i++) {
+                                        wrapa
+                                            .delay(timea)
+                                            .animate({
+                                            left: '-=' + suma + 'px'
+                                            })
+                                            .fadeTo(500, 1)
+                                    }
+                                    wrapa.animate({
+                                        left: '0'
+                                    }, 0);
+                                }
+                            };
+                            moveMentAreas();
                             
                             $(function() {
                                 $( "#abogados" ).tabs();

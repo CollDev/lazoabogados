@@ -1919,3 +1919,15 @@ span.white {
 .italic {
     font-style: italic;
 }
+.areas {
+    overflow: hidden;
+    width: 960px;
+}
+.clients .one_fourth {
+    margin-right: 0;
+    padding: 4px 17px 4px;
+    width: 207px;
+}
+.clients .one_fourth img {
+    width: 207px;
+}
