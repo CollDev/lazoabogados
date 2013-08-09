@@ -1,0 +1,26 @@
+                <div class="lawyers_detail">
+                    <div class="lawyers_details">
+                        <h2>{{ name }}</h2>
+                        <span class="small">Email: {{ email }}<br><br>
+                        Áreas: {{ areas }}</span>
+                        <span class="title">Formación académica:</span>
+                        {{ #formacion }}
+                        <ul>
+                            <li>{{ institucion }}</li>
+                        </ul>
+                        {{ /formacion}}
+                    </div>
+                    <div class="lawyers_details">
+                        <img src="images/layout/abogados/{{ foto }}" />
+                        <span class="title">Trayectoria profesional:</span>
+                        {{ #trayectoria }}
+                        <ul>
+                            <li>{{ trabajo }}</li>
+                        </ul>
+                        {{ /trayectoria }}
+                    </div>
+                </div>
+                <div class="lawyers_links">
+                    <div class="lawyers_link"><a href="{{ publicaciones }}">PUBLICACIONES</a></div>
+                    <div class="lawyers_link"><a href="{{ descargar }}">DESCARGAR CV</a></div>
+                </div>

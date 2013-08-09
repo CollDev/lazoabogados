@@ -1,29 +1,34 @@
 <?php
 if (!empty($_GET)) {
-    if (isset($_GET['products'])) {
-        require_once 'db.php';
-        $query = "SELECT `id`,
-`nombre`
-FROM `productos`
-ORDER BY `orden` ASC;";
-        $result = mysql_query($query);
-        $response = array();
-        while ($array = mysql_fetch_assoc($result)) {
-            $response[] = $array;
-        }
-        echo json_encode($response);
-    } elseif (isset($_GET['product_id'])) {
-        require_once 'db.php';
-        $query = "SELECT `id`,
-`descripcion`,
-`precio`,
-`oferta`
-FROM `productos`
-WHERE `id` = " . $_GET['product_id'] . ";";
-        $result = mysql_query($query);
-        $response = mysql_fetch_assoc($result);
-        $response["descripcion"] = htmlentities($response["descripcion"]);
-        $response["oferta"] = htmlentities($response["oferta"]);
+    if (isset($_GET['abogado'])) {
+//        require_once 'db.php';
+//        $query = "SELECT `id`,
+//`nombre`
+//FROM `productos`
+//ORDER BY `orden` ASC;";
+//        $result = mysql_query($query);
+//        $response = array();
+//        while ($array = mysql_fetch_assoc($result)) {
+//            $response[] = $array;
+//        }
+//        echo json_encode($response);
+//    } elseif (isset($_GET['product_id'])) {
+//        require_once 'db.php';
+//        $query = "SELECT `id`,
+//`descripcion`,
+//`precio`,
+//`oferta`
+//FROM `productos`
+//WHERE `id` = " . $_GET['product_id'] . ";";
+//        $result = mysql_query($query);
+//        $response = mysql_fetch_assoc($result);
+//        $response["descripcion"] = htmlentities($response["descripcion"]);
+//        $response["oferta"] = htmlentities($response["oferta"]);
+//        echo json_encode($response);
+        require_once 'abogados.php';
+        $response = $response['abogados'][$_GET['abogado']];
+        
+        header("Content-Type: application/json; charset=utf-8");
         echo json_encode($response);
     } else {
         echo 'La opción enviada no es válida';
