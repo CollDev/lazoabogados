@@ -329,21 +329,68 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: $(document).height() }, 500);
     });
 
-    $('a.link-lawyer').on('click', function(e){
+    $('a.link-associated').on('click', function(e){
         e.preventDefault();
+        var $this = this;
+        $('a.link-associated').removeClass().addClass('link-associated').addClass('orange');
+        $($this).removeClass().addClass('link-associated');
         $.getJSON("includes/json.php", {
-            abogado: $(this).attr('href')
+            abogado: $($this).attr('href')
         })
             .done(function(data) {
-                $.get("js/mustache/socios.html", function(template) {
-                    $("div#lawyer").html('');
+                $.get("js/mustache/perfil.html", function(template) {
+                    $("div#lawyer-associated").html('');
                     var app = 'No hay resultados para la búsqueda.';
                     if (data !== '') {
                         app = $.mustache(template, data);
                     }
-                    $("div#lawyer").append(app);
+                    $("div#lawyer-associated").append(app);
                 });
             });
     });
     $('div#tabs-1 ul li a').eq(0).trigger('click');
+    $('a.link-partner').on('click', function(e){
+        e.preventDefault();
+        var $this = this;
+        $('a.link-partner').removeClass().addClass('link-partner').addClass('orange');
+        $($this).removeClass().addClass('link-partner');
+        $.getJSON("includes/json.php", {
+            abogado: $($this).attr('href')
+        })
+            .done(function(data) {
+                $.get("js/mustache/perfil.html", function(template) {
+                    $("div#lawyer-partner").html('');
+                    var app = 'No hay resultados para la búsqueda.';
+                    if (data !== '') {
+                        app = $.mustache(template, data);
+                    }
+                    $("div#lawyer-partner").append(app);
+                });
+            });
+    });
+    $('div#tabs-2 ul li a').eq(0).trigger('click');
+    $('a.link-special').on('click', function(e){
+        e.preventDefault();
+        var $this = this;
+        $('a.link-special').removeClass().addClass('link-special').addClass('orange');
+        $($this).removeClass().addClass('link-special');
+        $.getJSON("includes/json.php", {
+            especialidad: $($this).attr('href')
+        })
+            .done(function(data) {
+                $.get("js/mustache/especial.html", function(template) {
+                    $("div#lawyer-special").html('');
+                    var app = 'No hay resultados para la búsqueda.';
+                    if (data !== '') {
+                        app = $.mustache(template, data);
+                    }
+                    $("div#lawyer-special").append(app);
+                });
+            });
+    });
+    $('div#tabs-3 ul li a').eq(0).trigger('click');
+    $(document).on('click', 'a.link-profile', function(e){
+        e.preventDefault();
+        $(this).attr('href');
+    });
 });

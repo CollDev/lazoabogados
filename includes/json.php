@@ -30,6 +30,15 @@ if (!empty($_GET)) {
         
         header("Content-Type: application/json; charset=utf-8");
         echo json_encode($response);
+    } else if (isset($_GET['especialidad'])) {
+        require_once 'especialidades.php';
+        require_once 'abogados.php';
+        foreach ($resp['especialidades'][$_GET['especialidad']]['abogados'] as $especialidad) {
+            $rpta['especialidades'][] = $response['abogados'][$especialidad['abogado']];
+        }
+        
+        header("Content-Type: application/json; charset=utf-8");
+        echo json_encode($rpta);
     } else {
         echo 'La opción enviada no es válida';
     }

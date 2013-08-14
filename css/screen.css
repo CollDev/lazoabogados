@@ -1655,7 +1655,7 @@ form#contact-form .send-button {
     z-index: 1002;
 }
 .orange {
-    color: #F6A548;
+    color: #F6A548 !important;
 }
 .info {
     height: 173px;
@@ -1931,6 +1931,6 @@ span.white {
 .clients .one_fourth img {
     width: 207px;
 }
-a.link-lawyer {
-    color: #F6A548 !important;
+a.link-associated, a.link-partner, a.link-special {
+    color: #F6A548;
 }
