@@ -391,6 +391,19 @@ $(document).ready(function() {
     $('div#tabs-3 ul li a').eq(0).trigger('click');
     $(document).on('click', 'a.link-profile', function(e){
         e.preventDefault();
-        $(this).attr('href');
+        $('body').modalmanager('loading');
+        $.getJSON("includes/json.php", {
+            abogado: $(this).attr('href')
+        })
+            .done(function(data) {
+                $.get("js/mustache/perfil.html", function(template) {
+                    var app = 'No hay resultados para la búsqueda.';
+                    if (data !== '') {
+                        app = $.mustache(template, data);
+                    }
+                    $("div#myModal").append(app);
+                });
+            });
+        $('#myModal').modal();
     });
 });

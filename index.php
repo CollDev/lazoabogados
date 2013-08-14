@@ -171,6 +171,7 @@ if (!in_array($option, $header)) {
                 <div>Todos los derechos reservados</div>
             </div>
         </div>
+        <div id="myModal"></div>
         <script src="js/jquery-1.8.0.min.js"></script>
         <script src="js/poshytip-1.0/src/jquery.poshytip.min.js"></script>
         <script src="js/tabs.js"></script>
@@ -185,6 +186,7 @@ if (!in_array($option, $header)) {
         <script src="js/jquery.mousewheel.js"></script>
         <script src="lib/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="js/jquery.mustache.js"></script>
+        <script src="js/bootstrap.modal.js"></script>
         <script src="js/screen.js"></script>
     </body>
 </html>
