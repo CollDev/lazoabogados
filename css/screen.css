@@ -1949,3 +1949,22 @@ span.white {
 a.link-associated, a.link-partner, a.link-special {
     color: #F6A548;
 }
+.ui-widget-overlay {
+   background: #000 !important;
+   opacity: .50 !important;
+   filter: Alpha(Opacity=50) !important;
+}
+#myModal .lawyers_detail {
+    background: #636363;
+    border-radius: 6px 6px 0 0;
+    clear: both;
+    display: block;
+    padding: 1.7em;
+}
+#myModal .lawyers_links {
+    background: #636363;
+    border-radius: 0 0 6px 6px;
+}
+#myModal .lawyers_link {
+    background: #909090;
+}

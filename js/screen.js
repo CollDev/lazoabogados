@@ -1,3 +1,6 @@
+$.ajaxSetup({
+    cache: false
+});
 $(document).ready(function() {
     $('.poshytip').poshytip({
         className: 'tip-twitter',
@@ -391,7 +394,7 @@ $(document).ready(function() {
     $('div#tabs-3 ul li a').eq(0).trigger('click');
     $(document).on('click', 'a.link-profile', function(e){
         e.preventDefault();
-        $('body').modalmanager('loading');
+        $("div#myModal").html('');
         $.getJSON("includes/json.php", {
             abogado: $(this).attr('href')
         })
@@ -404,6 +407,10 @@ $(document).ready(function() {
                     $("div#myModal").append(app);
                 });
             });
-        $('#myModal').modal();
+        $("div#myModal").dialog({
+            position: { my: "center", at: "center", of: "#header" },
+            modal: true,
+            width: 680
+        });
     });
 });
