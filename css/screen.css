@@ -1819,6 +1819,7 @@ form#work-form .work-label-mini {
     color: #575756;
     display: block;
     font-size: 12px;
+	font-weight: 700;
     height: 136px;
     overflow: hidden;
     padding: 10px 20px 20px 105px;
@@ -1826,7 +1827,21 @@ form#work-form .work-label-mini {
     z-index: 2;
 }
 .nextPrevLink .news_detail span a {
-    color: #f6f6f6;
+    color: #3C3C3B;
+	font-weight: 700;
+}
+.texto_blanco
+{
+	color: #fff;
+	font-size: 8.5px;
+	font-weight: 700;
+	line-height: 1.3em;
+}
+.texto_naranja
+{
+	color: #F6A548;
+	font-weight: 700;
+	text-align: right;
 }
 .nextPrevLink img {
     position: relative;
