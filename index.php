@@ -71,7 +71,7 @@ if (in_array($option, $header)) {
                                 </ul>
                             </li>
                             <li><a href="/reconocimientos"<?php if($option == 'reconocimientos') { ?> id="visited"<?php } ?>>Reconocimientos</a></li>
-                            <li><a href="#"<?php if($option == 'probono') { ?> id="visited"<?php } ?>>Probono</a></li>
+                            <li><a href="/probono"<?php if($option == 'probono') { ?> id="visited"<?php } ?>>Probono</a></li>
                             <li><a href="/contacto"<?php if($option == 'contacto') { ?> id="visited"<?php } ?>>Contacto</a></li>
                         </ul>
                     </div>
@@ -81,7 +81,7 @@ if (in_array($option, $header)) {
                             <option value="#">Áreas</option>
                             <option value="/abogados">Abogados</option>
                             <option value="/reconocimientos">Reconocimientos</option>
-                            <option value="#">Probono</option>
+                            <option value="/probono">Probono</option>
                             <option value="/contacto">Contacto</option>
                         </select>
                     </form>
@@ -144,7 +144,7 @@ if (!in_array($option, $header)) {
                 <p>RSE</p>
                 <div>
                     <ul>
-                        <li>Probono</li>
+                        <li><a href="/probono">Probono</a></li>
                     </ul>
                 </div>
             </div>
