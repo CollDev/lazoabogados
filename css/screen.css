@@ -1864,7 +1864,6 @@ form#work-form .work-label-mini {
 }
 #copyright .container {
     background: #575756;
-    padding: 10px;
 }
 #copyright .container .one_half {
     margin-right: 2%;
@@ -1875,9 +1874,8 @@ form#work-form .work-label-mini {
     border-radius: 5px 5px 0px 0px;
     color: white;
     display: none;
-    height: 160px;
+    height: 245px;
     padding: 0px;
-    width: 976px;
 }
 .slideTogglebox div {
     height: 160px;
@@ -1886,7 +1884,7 @@ form#work-form .work-label-mini {
 .slideTogglebox div div {
     border: 1px solid #3C3C3B;
     border-left: none;
-    height: 160px;
+    height: 196px;
     margin: 0;
     padding: 14px;
 }

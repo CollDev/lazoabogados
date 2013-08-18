@@ -159,16 +159,20 @@ if (!in_array($option, $header)) {
                 </div>
             </div>
         </div>
-        <div id="copyright">
+        <div id="copyright" class="container">
             <div class="container">
-                <div class="one_half alpha">
+                <div class="one_half alpha" style="margin-right: 0;margin-left:1%;margin-top:1%">
                     <div id="slideToggle" class="footer-button">Mapa de Sitio</div>
-                    <a href="/boletin"><div class="footer-button">Boletín</div></a>
+                    <a href="/boletin">
+                        <div class="footer-button">Boletín</div>
+                    </a>
                 </div>
-                <div class="one_half omega">
-                    <a href="/trabaja-con-nosotros"><div class="footer-button right">&nbsp;&nbsp;&nbsp;&nbsp;Trabaja con nosotros</div></a>
+                <div class="one_half omega" style="margin-right:0;margin-top:1%">
+                    <a href="/trabaja-con-nosotros">
+                        <div class="footer-button right">    Trabaja con nosotros</div>
+                    </a>
                 </div>
-                <div>Todos los derechos reservados</div>
+                <div class="one_half" style="margin-left:1%">Todos los derechos reservados</div>
             </div>
         </div>
         <div id="myModal"></div>
