@@ -1,4 +1,4 @@
-lazoabogados
-============
+Lazo Abogados
+=============
 
-http://www.lazoabogados.com.pe/ Web site.
+Lazo Abogados Web Page
